@@ -66,6 +66,12 @@ form{
     font-size: 18px;
 }
 
+.formContainer input:focus {
+    outline: none !important;
+    border: 2px solid #0066a1;
+    background-color: #EFF4FD;
+}
+
 form button{
     background-color: #f89a36;
     color: white;
