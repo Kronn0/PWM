@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins';
+}
+
+html{
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0px;
+}
+
+section{
+    width: calc(100%/2);
+}
+
+aside{
+    width: calc(100%/2);
+    background-color: #0066a1;
+}
+
+section header h1{
+    color: #f89a36;
+    font-size: 36px;
+    text-align: center;
+}
+
+section main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 50%;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.formContainer label{
+    font-size: 18px;
+}
+
+.formContainer input{
+    border-radius: 5px;
+    border: 1px solid #767676;
+    height: 25px;
+    margin-top: 5px;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+}
+
+form button{
+    background-color: #f89a36;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+    font-size: 18px;
+}
+
+#loginLinkContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+aside header{
+    display: flex;
+    flex-direction: column;
+}
+
+aside header h2{
+    color: #f89a36;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    font-size: 36px;
+}
+
+aside header p{
+    color: #f89a36;
+    padding: 0px 30px 30px 30px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0px;
+}
+
+#imageContainer{
+    display: flex;
+}
+
+
+#imageContainer div{
+
+}
+
