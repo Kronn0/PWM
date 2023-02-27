@@ -4,6 +4,9 @@
     font-family: "Poppins";
 }
 
+p{
+    font-weight: bold;
+}
 
 html{
     margin: 0px;
@@ -43,6 +46,7 @@ section main{
     justify-content: center;
 }
 
+
 form{
     display: flex;
     flex-direction: column;
@@ -72,13 +76,18 @@ form{
 
 }
 
+
+
 .formContainer input:focus{
     outline: none !important;
     border: 2px solid #0066a1;
     background-color: #EFF4FD;
 }
 
-form button{
+
+
+
+form #loginButton{
     background-color: #f89a36;
     color: white;
     border: 0px;
@@ -88,6 +97,11 @@ form button{
     margin: 10px 0px 10px 0px;
     font-size: 18px;
 }
+
+.altOptionsContainer label {
+    font-size: 14px;
+}
+
 
 #registerLinkContainer{
     display: flex;

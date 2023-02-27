@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles/login.css" />
+        <link rel="stylesheet" type="text/css" href="styles\login.css" />
         <title> Login - EII STUDENT KIT </title>  
     </head>
     <body>
@@ -14,18 +14,24 @@
             </header>
             <main>
                 <form>
-                    <div class="formContainer" id="emailContainer">
+                    <div class="formContainer">
                         <label for="email">Email</label>
                         <input type="text" placeholder="pepe.fernandez110@gmail.com" name="email" required>
                     </div>
-                    <div class="formContainer" id="passwordContainer">
+                    <div class="formContainer">
                         <label for="password">Password</label>
                         <input type="password" placeholder="contraseña" name="password" required>
                     </div>
-                    <button type="sumbit">Login</button>
-                    <div id="RegisterLinkContainer">
-                        <span>¿Todavia no tienes Cuenta?</span> 
-                        <a href="#">Registrate</a>
+                    <button type="sumbit" id="loginButton">Login</button>
+                 
+                    <div class= "altOptionsContainer"id="rememeberMeContainer">
+                    <input type="checkbox" id="rememeberMeCheck"></input>
+                    <label for="checkbox" id="rememberMeLabel">Remember me?</label>
+                    </div>
+                    
+                    <div class= "altOptionsContainer" id="RegisterLinkContainer">
+                        <label>¿Todavia no tienes Cuenta?
+                        <a href="#">Registrate</a></label> 
                     </div>
                 </form>
             </main>
@@ -37,7 +43,7 @@
                     asignaturas y cursos, y crea un horario personal.
                 </p>
                 <div id="imageContainer">
-                    <img src="DummyPics\StockImage.PNG" alt="Side_Imagen">
+                    <img src="media\StockImage.PNG" alt="Side_Imagen">
                 </div>
             </header>
         </aside>
