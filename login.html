@@ -1,48 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <title>
-           Login - EII STUDENT KIT 
-        </title>
-        <link rel="stylesheet" href="login.css">
-        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/login.css" />
+        <title> Login - EII STUDENT KIT </title>  
     </head>
-
-    <style>
-        body{
-            background-color: #0066A1;
-        }
-    </style>
-
     <body>
-
-        <a name="top"></a>
-        <div id="container">
-            <h1> EII STUDENT KIT</h1>
-            <img scr="placeholder.png" alt="EII STUDENT KIT LOGO">
-        </div>
-        <div id="container_image">
-            <em>Image:</em>
-            <img scr="DummyPics\placeholder.png" alt="ULPGC KIND PHORO">
-        </div>
-        <div id="container_textFields">
-            <label for="name">Usuario:</label>
-            <input type="text" id="Usuario" name="Usuario" required minlength="4" maxlength="8" size="10">
-
-            <label for="password">Password:</label>
-            <input type="password" id="Password" name="Password" required minlength="6" maxlength="12" size="13">
-        </div>
-        <div id="container_buttons">
-            <em>Buttons</em>
-            <button type="button" onclick="">Login</button>
-            <a id="password_forget",href="",style="color:#F89A36">has olvidado tu contraseña?</a>
-        </div> 
-        <div id="container_checkmark">
-            <em>Check</em>
-            <input type="checkbox",id="remember_me_check_button">
-            <label for="remember_me_check_button"> Remember me?</label>
-        </div>
-
-
+        <section>
+            <header>
+                <h1>¡Bienvenido de vuelta!</h1>
+            </header>
+            <main>
+                <form>
+                    <div class="formContainer" id="emailContainer">
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="pepe.fernandez110@gmail.com" name="email" required>
+                    </div>
+                    <div class="formContainer" id="passwordContainer">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="contraseña" name="password" required>
+                    </div>
+                    <button type="sumbit">Login</button>
+                    <div id="RegisterLinkContainer">
+                        <span>¿Todavia no tienes Cuenta?</span> 
+                        <a href="#">Registrate</a>
+                    </div>
+                </form>
+            </main>
+        </section>
+        <aside>
+            <header>
+                <h2>La mejor herramienta como estudiante de la ULPGC</h2>
+                <p>Accede de forma rápida a la información del profesorado, 
+                    asignaturas y cursos, y crea un horario personal.
+                </p>
+                <div id="imageContainer">
+                    <img src="DummyPics\StockImage.PNG" alt="Side_Imagen">
+                </div>
+            </header>
+        </aside>
     </body>
 </html>
