@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins';
+}
+ 
+ html {
+    margin: 0px;
+    height: 100%;
+ }
+ 
+ body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 50px 1fr 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0px;
+ }
+
+ 
+#navbar{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #0066A1;
+}
+
+#navbar ul{
+    display: flex;
+    flex: 3;
+    justify-content: space-evenly;
+}
+
+#navbar ul li {
+    color: white;
+    list-style-type: none;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#userButton{
+    flex: 1;
+    padding: 12px 0px 0px 0px;
+    color: white;
+}
+
+#navbarProfesorado{
+    grid-row: 2;
+    grid-column: span 2;
+}
+
+main{
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+#filtrosContainer{
+    grid-row: span 2;
+}
+
+footer{
+    grid-row: 4;
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0px 15px 0px 15px;
+}
+
+.appName{
+    color: #F89A36;
+}
+
+.textLink{
+    text-decoration: none;
+    color: #0066A1;
+}
+
+.iconLink{
+    color: #0066A1;
+}
+
+footer ul {
+    display: flex;
+    flex: 2;
+    justify-content: space-around   ;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer article {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+footer article * {
+    text-align: end;
+    color: #0066A1;
+    font-size: 12px;
+}
+
+
