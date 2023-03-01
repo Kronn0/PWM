@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins';
+}
+ 
+
+
+button{
+    margin: 10px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+button .pngButton{
+    width: 45px;
+    height: 45px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    grid-column: span 3;
+    align-items: center;
+}
+
+tableHeader{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+
+#editButton{
+    order: 0;
+}
+
+table{
+    margin: 1%;
+    flex:auto;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: #F0F0F0;
+ }
+
+ th{
+    font-size: 20px;
+ }
+ 
+td, th{
+    display: table-cell;
+    text-align: center;
+    vertical-align: center;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+    color: #919191;
+    width: 232.98px;
+    height: 20px;
+    }
+
+td{
+    width: 232.98px;
+    height: 20px;
+    border: 2px solid #D0D0D0;
+}
+
+.gridDark{
+    background-color: #DADADA;
+    
+}
+
+#editButton{
+    align-self:flex-start
+}
+
+#horariosButton{
+    align-self:flex-start
+}
+
