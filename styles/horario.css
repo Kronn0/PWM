@@ -44,6 +44,18 @@
     list-style-type: none;
 }
 
+button{
+    margin: 10px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+button .pngButton{
+    width: 45px;
+    height: 45px;
+}
 
 main{
     display: flex;
@@ -58,11 +70,9 @@ tableHeader{
     flex-direction: row;
     justify-content: space-between;
 
+
 }
 
-button{
-    margin: 1%;
-}
 
 #editButton{
     order: 0;
@@ -80,7 +90,7 @@ table{
 td, th{
     display: table-cell;
     text-align: center;
-    vertical-align: top;
+    vertical-align: center;
     border-collapse: collapse;
     padding: 0.3em;
     caption-side: bottom;
