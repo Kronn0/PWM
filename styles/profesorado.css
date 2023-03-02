@@ -12,55 +12,161 @@
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 50px 50px 1fr 50px;
+    grid-template-rows: 8% 8% 74% 10%;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
     padding: 0px;
  }
 
  
-#navbar{
+ header {
+    background-color: #0066a1;
     grid-column: span 3;
+}
+
+ #navbar {
+    background-color: #0066a1;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: #0066A1;
+}
+ 
+#navbar .textLink{
+    color:white;
+    text-decoration: none;
 }
 
 #navbar ul{
     display: flex;
-    flex: 3;
+    flex: 2;
+    flex-direction: row;
     justify-content: space-evenly;
+    margin: 10px;
 }
+
+#userButton{
+    flex: 1;
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+    margin: 10px 20px 10px 20px;
+}
+
+
 
 #navbar ul li {
     color: white;
     list-style-type: none;
 }
 
-#navbar ul li a {
-    color: white;
-    text-decoration: none;
+#logoContainer {
+    flex: 1;
+    margin: 5px;
+
 }
 
-#userButton{
-    flex: 1;
-    padding: 12px 0px 0px 0px;
-    color: white;
+#logotipoImg{
+    height: 30px;
+    width: 30px;
 }
 
 #navbarProfesorado{
     grid-row: 2;
     grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+
 }
+
+#buscador, .dropdownMenu{
+    margin: 10px;
+    background-color: #d9d9d9;
+    border-radius: 80px;
+    width: 100%;
+}
+
+#buscador {
+    display: flex;
+}
+
+#searchIcon{
+    display:inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    color: #8B8787;
+    width: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#inputSearch {
+    border: 0;
+    background-color: #d9d9d9;
+    width: 75%;
+}
+
+#inputSearch:focus {
+    outline: none;    
+}
+
+.dropdownMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdownMenu span {
+    font-size: 14px;
+    display: block;
+    margin: 5px;
+    padding-left: 10px;
+}
+
+#dropdownIcon {
+    display:inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    color: #8B8787;
+    width: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
 
 main{
     grid-column: span 2;
     grid-row: 3;
 }
 
+
+#verticalMenu{
+    flex: 10;
+    top: 150px;
+    overflow-y: auto;   
+    padding: 20px;
+    height: 350px;
+}
+
+#verticalMenu div{
+    height: 100px;
+    padding: 10px 30px 10px 30px;
+    border-bottom: 3px solid #d6d6d6;
+}
+
+
 #filtrosContainer{
     grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px 10px 50px;
+    padding: 10px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+}
+
+#filtrosContainer button{
+    justify-content: center;
 }
 
 footer{
@@ -108,4 +214,23 @@ footer article * {
     font-size: 12px;
 }
 
+
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
