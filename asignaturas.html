@@ -9,23 +9,31 @@
     <title>Asignaturas</title>
 </head>
 <body>
-    <nav id="navbar">
-        <ul>
-            <li><a>Horario</a></li>
-            <li><a>Profesorado</a></li>
-            <li><a>Horario</a></li>
-        </ul>
-        <a id="userButton">Pepe Fernandez Hernandez</a>
-        
+    <header>
+        <nav id="navbar">
+            <div id="logoContainer">
+                <img id="logotipoImg" src="media/placeholder.png" alt="logotipo">
+
+            </div>
+            <ul>
+                <li><a href="#" class="textLink">Horario</a></li>
+                <li><a href="#" class="textLink">Profesorado</a></li>
+                <li><a href="#" class="textLink">Asignaturas</a></li>
+            </ul>
+            <a href="#" id="userButton" class="textLink">Pepe Fernandez Hernandez</a>    
+        </nav>
+    </header>
+    <nav id="navbarAsignaturas">
+        <div id="buscador">
+            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+            <input id="inputSearch" type="text" placeholder="Buscar...">
+        </div>
+        <div class="dropdownMenu">
+            <span>Ordenador por: Item de ordenación</span>
+            <i id="dropdownIcon" class="fa-solid fa-caret-down"></i>
+        </div>
     </nav>
     <main>
-        <nav id="navbarAsignaturas">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Buscar...">
-            <div class="dropdownMenu">
-                <span>Ordenador por: Item de ordenación</span>
-            </div>
-        </nav>
         <article id="verticalMenu">
             <div>
                 <p>Esto es una asignatura</p>
@@ -54,7 +62,7 @@
     </main>
     <aside id="filtrosContainer">
         <span>Filtros</span>
-        <button type="button">Aplicar</button>
+        <button type="button" id="filterButton">Aplicar</button>
     </aside>
     <footer>
         <ul>

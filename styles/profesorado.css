@@ -214,6 +214,16 @@ footer article * {
     font-size: 12px;
 }
 
+#filterButton{
+    background-color: #F89A36;
+    color: white;
+    border-radius: 15px;
+    border: 0;
+    width: 65%;
+    height: 40px;
+    margin: 20px;
+}
+
 
 
 /* Scrollbar style */
