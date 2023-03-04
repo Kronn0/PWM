@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4e57eda16a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles/editHorario.css" />
+  <link rel="stylesheet" type="text/css" href="styles/headerAndFooter.css" />
+  <title>Editar Horario - EII STUDENT KIT</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <div id="logoContainer">
+        <img id="logotipoImg" src="media/placeholder.png" alt="logotipo">
+
+      </div>
+      <ul>
+        <li><a href="#" class="textLink">Horario</a></li>
+        <li><a href="#" class="textLink">Profesorado</a></li>
+        <li><a href="#" class="textLink">Asignaturas</a></li>
+      </ul>
+      <a href="#" id="userButton" class="textLink">Pepe Fernandez Hernandez</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <tableHeader>
+      <button id="editButton">
+        <img class="pngButton" src="media\editButton.PNG" alt="Side_Imagen">
+      </button>
+      <input type="text" id="nombreHorario" name="nombreHorario" placeholder="NOMBRE HORARIO" required>
+      <div id="optionButtonsContainer">
+        <button class="optionButton" id="okButton">
+          Guardar
+        </button>
+        <button class="optionButton" id="canButton" name="canButton">
+          Cancelar
+        </button>
+
+      </div>
+
+    </tableHeader>
+    <editZone>
+      <table class="horario">
+
+        <tr class="rowOfDays">
+          <th scope="row"></th>
+          <th>LUNES</th>
+          <th>MARTES</th>
+          <th>MIÉRCOLES</th>
+          <th>JUEVES</th>
+          <th>VIERNES</th>
+        </tr>
+        <tr class="gridLight">
+          <th>8:30-9:30</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="gridDark">
+          <th>9:30-10:30</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="gridLight">
+          <th>10:30-11:30</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="gridDark">
+          <th>11:30-12:30</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="gridLight">
+          <th>12:30-13:30</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="gridDark">
+          <th>13:30-14:30</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <div id="asignaturaOptions">
+        <div id="SearchContainer">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="filtroAsignaturaHorarios" placeholder="Filtrar por Nombre">
+        </div>
+        <div id="ratioButtonsContainer">
+          <input type="radio" id="horarioManana" name="pref_horario" value="HorarioManana">
+          <label for="horarioManana">Horario mañana</label>
+          <input type="radio" id="horarioTarde" name="pref_horario" value="HorarioTarde">
+          <label for="horarioTarde">Horario tarde</label>
+        </div>
+        <div id="filtroCursos">
+          <p>Primer año</p>
+          <div class="filtroDesplegable" id="filtroUno">
+            <div class="asignatura" id="asignaturaUno">
+              <input type="checkbox" id="asignaturaUnoCheckbox">
+                <label class="labelAsignaturaCheckBox" for="asignaturaUnoCheckbox">COD</label>
+                <div class="seleccionadorGrContainer">
+                <div class="seleccionadorGrupos">
+                  <label>Teoria</label>
+                  <button class="menuGrupos" type="menu" id="grupoTeoriaA1"> grupo 1</button>
+                </div>
+                <div class="seleccionadorGrupos">
+                  <label>Practica</label>
+                  <button class="menuGrupos" type="menu" id="grupoTeoriaA1"> grupo 1</button>
+                </div>
+              </div>
+            </div>
+            <div class="asignatura" id="asignaturaDos">
+              <input type="checkbox" id="asignaturaDosCheckbox">
+              <label class="labelAsignaturaCheckBox" for="asignaturaDosCheckbox">COD</label>
+              <div class="seleccionadorGrContainer">
+              <div class="seleccionadorGrupos">
+                <label>Teoria</label>
+                <button class="menuGrupos" type="menu" id="grupoTeoriaA2"> grupo 1</button>
+              </div>
+              <div class="seleccionadorGrupos">
+                <label>Practica</label>
+                <button class="menuGrupos" type="menu" id="grupoTeoriaA2"> grupo 1</button>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+        <p>Segundo año</p>
+        <p>Tercer año</p>
+        <p>Cuarto año</p>
+        </div>
+        </div>
+        </editZone>
+        </main>
+
+  <footer>
+    <ul>
+      <li><b href="#" class="appName">EII Student Kit</b></li>
+      <li><a href="#" class="textLink">About us</a></li>
+      <li><a href="#" class="textLink">Terms</a></li>
+      <li><a href="#" class="iconLink"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#" class="iconLink"><i class="fa-brands fa-github"></i></a></li>
+    </ul>
+    <article>
+      <span>Contacto: <a href="#">adminKitStudent@gmail.com</a></span>
+      <a href="#" class="textLink">Preguntas frecuentes</a>
+    </article>
+  </footer>
+</body>
+
+</html>

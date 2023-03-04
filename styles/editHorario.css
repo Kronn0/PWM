@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins';
+}
+ 
+
+
+#editButton{
+    margin: 10px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#optionButtonsContainer{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.optionButton{
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    margin:20px;
+    cursor: pointer;
+}
+
+#okButton{
+    background-color:#F89A36;
+    color:white;
+}
+
+#canButton{
+    background-color:#767676;
+    color:white;
+}
+
+button .pngButton{
+    width: 45px;
+    height: 45px;
+}
+
+#nombreHorario{
+    height: 61px;
+    width: 637px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 30px;
+    align-self: center;
+    justify-self: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    grid-column: span 3;
+    align-items: center;
+}
+
+editZone{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#asignaturaOptions{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; 
+    width: 469px;
+    height: 728px;
+    background-color: #F0F0F0;
+    margin: 5px;
+}
+
+
+
+tableHeader{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.filtroDesplegable{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.labelAsignaturaCheckbox{
+    vertical-align: middle;
+}
+
+.asignatura{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+.seleccionadorGrContainer{
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.seleccionadorGrupos{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuGrupos{
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    margin:20px;
+    cursor: pointer;
+    background-color: white;
+
+}
+
+
+
+#editButton{
+    order: 0;
+}
+
+table{
+    margin: 1%;
+    flex:auto;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: #F0F0F0;
+ }
+
+ th{
+    font-size: 20px;
+ }
+ 
+td, th{
+    display: table-cell;
+    text-align: center;
+    vertical-align: center;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+    color: #919191;
+    width: 232.98px;
+    height: 20px;
+    }
+
+td{
+    width: 232.98px;
+    height: 20px;
+    border: 2px solid #D0D0D0;
+}
+
+.gridDark{
+    background-color: #DADADA;
+    
+}
+
+#editButton{
+    align-self:flex-start
+}
+
+#horariosButton{
+    align-self:flex-start
+}
+
