@@ -87,8 +87,11 @@ main h1 {
     width: 100%;
     justify-content: space-evenly;
 }
-
-
+#profesoresContainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
 
 
 #searchContainer {
@@ -122,7 +125,6 @@ main h1 {
     font-weight: 600;
 
 }
-
 
 #searchMenu div p{
     font-size: 14px;
