@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins';
+}
+ 
+ html {
+    margin: 0px;
+    height: 100%;
+ }
+ 
+ body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 8% 82% 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0px;
+ }
+
+ 
+ header {
+    background-color: #0066a1;
+    grid-column: span 3;
+}
+
+ #navbar {
+    background-color: #0066a1;
+    display: flex;
+    flex-direction: row;
+}
+ 
+#navbar .textLink{
+    color:white;
+    text-decoration: none;
+}
+
+#navbar ul{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+#userButton{
+    flex: 1;
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+    margin: 10px 20px 10px 20px;
+}
+
+#navbar ul li {
+    color: white;
+    list-style-type: none;
+}
+
+#logoContainer {
+    flex: 1;
+    margin: 5px;
+
+}
+
+#logotipoImg{
+    height: 30px;
+    width: 30px;
+}
+
+main {
+    grid-column: span 2;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    margin: 10px;
+}
+
+#infoContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+
+
+#searchContainer {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 30px 10px 50px;
+    padding: 10px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+}
+
+#searchBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+#searchBar i {
+    flex: 1;
+    display:inline-block;
+    line-height: 25px;
+    color: #292929;
+}
+
+#searchBar span{
+    flex: 2;
+    font-weight: 600;
+
+}
+
+
+#searchMenu div p{
+    font-size: 14px;
+    margin: 0px 0px 20px 0px;
+}
+
+
+
+.simpleText {
+    color: #292929;
+}
+
+
+
+footer{
+    grid-row: 3;
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0px 15px 0px 15px;
+}
+
+.appName{
+    color: #F89A36;
+}
+
+.textLink{
+    text-decoration: none;
+    color: #0066A1;
+}
+
+.iconLink{
+    color: #0066A1;
+}
+
+footer ul {
+    display: flex;
+    flex: 2;
+    justify-content: space-around   ;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer article {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+footer article * {
+    text-align: end;
+    color: #0066A1;
+    font-size: 12px;
+}
+
