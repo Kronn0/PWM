@@ -110,12 +110,12 @@ form #loginButton{
     font-size: 18px;
 }
 
-aside{
+aside header{
     display: flex;
     flex-direction: column;
 }
 
-aside header{
+aside header h2{
     color: #f89a36;
     padding: 0px 30px 0px 30px;
     text-align: center;
@@ -124,7 +124,7 @@ aside header{
 
 aside header p{
     color: #f89a36;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 30px 30px 30px;
     text-align: center;
     font-size: 18px;
     margin: 0px;
