@@ -8,7 +8,7 @@
         <title> Login - EII STUDENT KIT </title>  
     </head>
     <body>
-        <section>
+        <section id="leftContainer">
             <header>
                 <h1>¡Bienvenido de vuelta!</h1>
             </header>
@@ -21,31 +21,28 @@
                     <div class="formContainer">
                         <label for="password">Password</label>
                         <input type="password" placeholder="contraseña" name="password" required>
-                    </div>
-                    <button type="sumbit" id="loginButton">Login</button>
-                 
+                    </div>                 
                     <div class= "altOptionsContainer"id="rememeberMeContainer">
                     <input type="checkbox" id="rememeberMeCheck"></input>
                     <label for="checkbox" id="rememberMeLabel">Remember me?</label>
                     </div>
+                    <button type="sumbit" id="loginButton">Login</button>
+                    <p>¿Todavia no tienes Cuenta?
+                    <a href="#">Registrate</a></p> 
                     
-                    <div class= "altOptionsContainer" id="RegisterLinkContainer">
-                        <label>¿Todavia no tienes Cuenta?
-                        <a href="#">Registrate</a></label> 
-                    </div>
                 </form>
             </main>
         </section>
-        <aside>
+        <section id="rightContainer">
             <header>
                 <h2>La mejor herramienta como estudiante de la ULPGC</h2>
                 <p>Accede de forma rápida a la información del profesorado, 
                     asignaturas y cursos, y crea un horario personal.
                 </p>
-                <div id="imageContainer">
-                    <img src="" alt="Side_Imagen">
-                </div>
             </header>
-        </aside>
+            <article id="imageContainer">
+                <img src="media/loginImg.svg" alt="Side_Imagen">
+            </article>
+        </section>
     </body>
 </html>

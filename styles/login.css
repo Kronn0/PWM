@@ -4,43 +4,37 @@
     font-family: "Poppins";
 }
 
-p{
-    font-weight: bold;
-}
-
 html{
     margin: 0px;
     height: 100%;
 }
 
 body{
+    min-width: 100%;
+    min-height: 100vh;
     display: flex;
+    flex-wrap: wrap-reverse;
     margin: 0;
     padding: 0px;
-    height: 100%;
 }
 
 
 section{
+    flex: 1;
     display:flex;
-    align-self:center;
     flex-direction: column;
-    width: calc(100%/2);
+    justify-content: center;
+    width: 50%;
     
 }
 
-aside{
-    width: calc(100%/2);
-    background-color: #0066a1;
-}
-
-section header h1{
+#leftContainer header h1{
     color: #f89a36;
     font-size: 36px;
     text-align: center;
 }
 
-section main{
+#leftContainer main{
     display:flex;
     align-items: flex-start;
     justify-content: center;
@@ -110,19 +104,18 @@ form #loginButton{
     font-size: 18px;
 }
 
-aside header{
-    display: flex;
-    flex-direction: column;
+#rightContainer{
+    background-color: #0066a1;
 }
 
-aside header h2{
+#rightContainer header h2{
     color: #f89a36;
     padding: 0px 30px 0px 30px;
     text-align: center;
     font-size: 36px;
 }
 
-aside header p{
+#rightContainer header p{
     color: #f89a36;
     padding: 0px 30px 30px 30px;
     text-align: center;
@@ -131,5 +124,18 @@ aside header p{
 }
 
 #imageContainer{
-    align-self: center;
+    display: flex;
+    justify-content: center;
 }
+
+#imageContainer img {
+    width: 65%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+
+    #rightContainer{
+        display: none;
+    }
+  }
