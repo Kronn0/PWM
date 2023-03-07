@@ -12,26 +12,25 @@ body{
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
+    flex-wrap: wrap-reverse;
     margin: 0;
     padding: 0px;
 }
 
 section{
-    width: calc(100%/2);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#rightContainer{
-    width: calc(100%/2);
-    background-color: #0066a1;
-}
-
-section header h1{
+#leftContainer header h1{
     color: #f89a36;
     font-size: 36px;
     text-align: center;
 }
 
-section main{
+#leftContainer main{
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -90,9 +89,8 @@ form button{
     font-size: 18px;
 }
 
-#rightContainer header{
-    display: flex;
-    flex-direction: column;
+#rightContainer{
+    background-color: #0066a1;
 }
 
 #rightContainer header h2{
@@ -112,10 +110,17 @@ form button{
 
 #imageContainer{
     display: flex;
+    justify-content: center;
 }
 
-
-#imageContainer div{
-
+#imageContainer img {
+    width: 65%;
+    height: auto;
 }
 
+@media (max-width: 1024px) {
+
+    #rightContainer{
+        display: none;
+    }
+  }
