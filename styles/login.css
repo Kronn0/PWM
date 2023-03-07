@@ -2,6 +2,7 @@
 
 *{
     font-family: "Poppins";
+    color: #292929;
 }
 
 html{
@@ -96,6 +97,10 @@ form #loginButton{
     font-size: 14px;
 }
 
+form a{
+    font-weight: 600;
+}
+
 
 #registerLinkContainer{
     display: flex;
@@ -137,5 +142,13 @@ form #loginButton{
 
     #rightContainer{
         display: none;
+    }
+
+    #leftContainer {
+        background-color: #0066a1;
+    }
+
+    label, p, a{
+        color: white;
     }
   }
