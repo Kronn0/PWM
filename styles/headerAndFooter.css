@@ -33,44 +33,61 @@ header {
     background-color: #0066a1;
     display: flex;
     padding: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
     align-items: center;
 }
 
 .headerItem{
     display: flex;
+    margin: 0px;
     align-self: stretch;
     align-items: center;
     flex-wrap: nowrap;
+}
+
+.headerItemMain{
     flex:auto;
+    justify-content: center;
+    text-align: center;
+
 }
 
  #navbar {
     background-color: #0066a1;
-    display: flex;
-    flex-direction: row;
+    max-width: none;
+    position: relative;
+    text-align: center;
 }
 
 #navbar ul{
-    display: flex;
-    flex: 2;
-    flex-direction: row;
-    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#navbar li {
+    display: inline;
+    color: white;
+}
+
+#navbar a{
+    text-align: center;
+    display:inline-block;
 }
 
 #userButton{
-    flex: 1;
-    padding: 17px 0px 0px 0px;
+    flex: auto;
+    padding: 0px 0px 0px 0px;
     color: white;
     text-align: right;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 
 
-#navbar ul li {
-    color: white;
-    list-style-type: none;
-}
+
 
 #logoContainer {
     flex: 1;
