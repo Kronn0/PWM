@@ -11,27 +11,37 @@
  body {
     width: 100%;
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: 60px 1fr 60px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0;
-    padding: 0px;
+    margin: 0px;
  }
 
 
  
-#navbar .textLink{
+.headerTextLink{
     color:white;
     text-decoration: none;
 }
 
-#navbar a:visited{
+.headerTextLink:visited{
     color:white
+}
+
+.headerWrapper{
+    display: block;
 }
 
 header {
     background-color: #0066a1;
-    grid-column: span 3;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+}
+
+.headerItem{
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex:auto;
 }
 
  #navbar {
@@ -73,6 +83,12 @@ header {
     width: 50px;
 }
 
+.footerWrapper{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
 
 footer{
     grid-row: span 4;
