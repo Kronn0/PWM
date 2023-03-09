@@ -20,12 +20,12 @@ main{
     flex:1;
 }
  
-.headerTextLink{
+header a:link{
     color:white;
     text-decoration: none;
 }
 
-.headerTextLink:visited{
+header a:visited{
     color:white
 }
 
@@ -59,6 +59,7 @@ header {
     justify-content: center;
     text-align: center;
     width: 50%;
+    min-width: 220px;
 }
 
  #navbar {
@@ -81,6 +82,11 @@ header {
 
 #navbar a{
     text-align: center;
+}
+
+ion-icon{
+    width: 40px;
+    height: 40px;
 }
 
 #userButton{
@@ -144,6 +150,7 @@ footer ul {
     display: flex;
     flex-direction: column;
     text-align: end;
+    justify-content: center;
     color: #0066A1;
     font-size: 12px;
 }
@@ -163,4 +170,17 @@ footer .appName{
 
 #footerEmail{
     text-decoration: underline;
+}
+
+
+@media (min-width: 641px) {
+    span.wideHide {display:none}
+    span.wideShow {display:inline-block}
+    footer ul {display:flex}
+}
+
+@media (max-width: 640px) {
+    span.wideHide {display:inline-block}
+    span.wideShow {display:none}
+    footer ul {display:inline-block}
 }
