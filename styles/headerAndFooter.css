@@ -9,12 +9,16 @@
  }
  
  body {
+    display:flex;
+    flex-direction: column;
     width: 100%;
     min-height: 100vh;
     margin: 0px;
  }
 
-
+main{
+    flex:1;
+}
  
 .headerTextLink{
     color:white;
@@ -26,7 +30,9 @@
 }
 
 .headerWrapper{
-    display: block;
+    display: flex;
+    margin: 0;
+    min-height: 50px;
 }
 
 header {
@@ -36,6 +42,7 @@ header {
     padding-left: 32px;
     padding-right: 32px;
     align-items: center;
+    width: 100%;
 }
 
 .headerItem{
@@ -44,37 +51,36 @@ header {
     align-self: stretch;
     align-items: center;
     flex-wrap: nowrap;
+    width: 25%;
 }
 
 .headerItemMain{
     flex:auto;
     justify-content: center;
     text-align: center;
-
+    width: 50%;
 }
 
  #navbar {
     background-color: #0066a1;
-    max-width: none;
-    position: relative;
     text-align: center;
+    width: 100%;
 }
 
 #navbar ul{
     padding: 0;
     margin: 0;
     list-style: none;
-    text-align: center;
 }
 
 #navbar li {
-    display: inline;
+    display: inline-block;
     color: white;
+    width: 32%;
 }
 
 #navbar a{
     text-align: center;
-    display:inline-block;
 }
 
 #userButton{
@@ -84,10 +90,6 @@ header {
     text-align: right;
     margin-right: 0px;
 }
-
-
-
-
 
 #logoContainer {
     flex: 1;
@@ -101,44 +103,52 @@ header {
 }
 
 .footerWrapper{
-    display: block;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex;
+    margin: 0;
+    min-height: 50px;
 
 }
 
 footer{
-    grid-row: span 4;
-    grid-column: span 3;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 15px 0px 15px;
+    width: 100%;
+    padding: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 footer ul {
     display: flex;
-    flex: 2;
-    justify-content: space-around   ;
+    justify-content: space-between  ;
     height: 100%;
     margin: 0;
     list-style-type: none;
     align-items: center;
+    padding: 0;
+    width: 100%;
 }
 
-footer article {
+
+.footerItem{
+    width: 50%;
+}
+
+#footerLeft{
     display: flex;
-    flex: 2;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-footer article * {
+#footerRight{
+    display: flex;
+    flex-direction: column;
     text-align: end;
     color: #0066A1;
     font-size: 12px;
 }
 
-footer .textLink{
+footer a:link{
     text-decoration: none;
     color: #0066A1;
 }
@@ -149,4 +159,8 @@ footer a:visited{
 
 footer .appName{
     color: #F89A36;
+}
+
+#footerEmail{
+    text-decoration: underline;
 }

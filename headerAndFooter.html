@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4e57eda16a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles/headerAndFooter.css" />
-    <title>Asignaturas</title>
+    <title>Header y footer</title>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -36,17 +36,19 @@
     </main>
     <div class="footerWrapper">
         <footer>
-            <ul>
-                <li><b href="#" class="appName">EII Student Kit</b></li>
-                <li><a href="#" class="textLink">About us</a></li>
-                <li><a href="#" class="textLink">Terms</a></li>
-                <li><a href="#" class="iconLink"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#" class="iconLink"><i class="fa-brands fa-github"></i></a></li>
-            </ul>
-            <article>
-                <span>Contacto: <a href="#">adminKitStudent@gmail.com</a></span>
+            <div class="footerItem" id="footerLeft">
+                <ul>
+                    <li><b href="#" class="appName">EII Student Kit</b></li>
+                    <li><a href="#" class="textLink">About us</a></li>
+                    <li><a href="#" class="textLink">Terms</a></li>
+                    <li><a href="#" class="iconLink"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#" class="iconLink"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="footerItem" id="footerRight">
+                <span>Contacto: <a href="#" id="footerEmail">adminKitStudent@gmail.com</a></span>
                 <a href="#" class="textLink" >Preguntas frecuentes</a>
-            </article>
+            </div>
         </footer>
     </div>
 </body>
