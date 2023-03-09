@@ -29,6 +29,12 @@ header a:visited{
     color:white
 }
 
+header a:hover{
+    color: #F89A36;
+}
+
+
+
 .headerWrapper{
     display: flex;
     margin: 0;
@@ -84,15 +90,18 @@ header {
     text-align: center;
 }
 
-ion-icon{
-    width: 40px;
-    height: 40px;
+header ion-icon{
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+ion-icon {
+    pointer-events: none;
 }
 
 #userButton{
     flex: auto;
     padding: 0px 0px 0px 0px;
-    color: white;
     text-align: right;
     margin-right: 0px;
 }
@@ -136,7 +145,6 @@ footer ul {
     width: 100%;
 }
 
-
 .footerItem{
     width: 50%;
 }
@@ -170,6 +178,11 @@ footer .appName{
 
 #footerEmail{
     text-decoration: underline;
+}
+
+footer ion-icon{
+    font-size: 20px;
+    vertical-align: middle;
 }
 
 
