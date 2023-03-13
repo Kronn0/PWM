@@ -46,6 +46,16 @@
             }
         }
     </script>
+    <!-- Mantener datos en submit [WIP] -->
+    <script>
+        function keepData () {
+            const inputsList = document.forms["registerForm"].getElementsByTagName("input");
+            for (i = 0; i < inputsList.length; i++) {
+                sessionStorage.setItem(inputsList[i],
+                    document.getElementById(inputsList[i]))
+            }
+        }
+    </script>
 
 </head>
 <body>
