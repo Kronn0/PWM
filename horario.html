@@ -5,111 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4e57eda16a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="styles/horario.css" />
     <link rel="stylesheet" type="text/css" href="styles/headerAndFooter.css" />
+    <link rel="stylesheet" type="text/css" href="styles/horario.css" />
     <title>Horario - EII STUDENT KIT</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-  <header>
-    <nav id="navbar">
-        <div id="logoContainer">
+<div class="headerWrapper">
+    <header>
+        <div class="headerItem">
             <img id="logotipoImg" src="media/placeholder.png" alt="logotipo">
-
         </div>
-        <ul>
-            <li><a href="#" class="textLink">Horario</a></li>
-            <li><a href="#" class="textLink">Profesorado</a></li>
-            <li><a href="#" class="textLink">Asignaturas</a></li>
-        </ul>
-        <a href="#" id="userButton" class="textLink">Pepe Fernandez Hernandez</a>    
-    </nav>
-</header>
+        <div class="headerItem headerItemMain">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#"><span class="wideShow">Horario</span><span class="wideHide"><ion-icon name="calendar"></ion-icon></span></a></li>
+                    <li><a href="#"><span class="wideShow">Profesorado</span><span class="wideHide"><ion-icon name="id-card"></ion-icon></span></a></li>
+                    <li><a href="#"><span class="wideShow">Asignaturas</span><span class="wideHide"><ion-icon name="school"></ion-icon></span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headerItem" id="userWrapper">
+            <a href="#" id="userButton"><span class="wideShow">Pepe Fernandez Hernandez</span><span class="wideHide"><ion-icon name="person-circle"></ion-icon></span></a>
+        </div>
+    </header>
+</div>
 
-    <main>
-      
-      <tableHeader>
+<main>
+
+    <tableHeader>
         <button id="editButton">
-          <img class="pngButton"  src="media\editButton.PNG" alt="Side_Imagen">
+            <img class="pngButton"  src="media\editButton.PNG" alt="Side_Imagen">
         </button>
         <h1>HORARIO NOMBRE </h1>
         <button id="horariosButton">
-          <img class="pngButton"  src="media\horariosButton.png" alt="horariosButton">
+            <img class="pngButton"  src="media\horariosButton.png" alt="horariosButton">
         </button>
 
-      </tableHeader>
-      <table class="horario">
+    </tableHeader>
+    <table class="horario">
 
         <tr class="rowOfDays">
-          <th scope="row"></th>
-          <th>LUNES</th>
-          <th>MARTES</th>
-          <th>MIÉRCOLES</th>
-          <th>JUEVES</th>
-          <th>VIERNES</th>
+            <th>
+                <button id="backDay" class="wideHide"><ion-icon  class="arrowIcon" name="caret-back-outline"></ion-icon></button>
+                <button id="forwardDay" class="wideHide"><ion-icon class="arrowIcon" name="caret-forward-outline"></ion-icon></button>
+            </th>
+            <th class="Mon">LUNES</th>
+            <th class="Tues">MARTES</th>
+            <th class="Wed">MIÉRCOLES</th>
+            <th class="Thu">JUEVES</th>
+            <th class="Fry">VIERNES</th>
         </tr>
         <tr class="gridLight">
-          <th>8:30-9:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+            <th>8:30-9:30</th>
+            <td class="Mon"></td>
+            <td class="Tues"></td>
+            <td class="Wed"></td>
+            <td class="Thu"></td>
+            <td class="Fry"></td>
         </tr>
         <tr class="gridDark">
-          <th>9:30-10:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+            <th>9:30-10:30</th>
+            <td class="Mon"></td>
+            <td class="Tues"></td>
+            <td class="Wed"></td>
+            <td class="Thu"></td>
+            <td class="Fry"></td>
+        </tr>
+        <col class="gridLight">
+        <th>10:30-11:30</th>
+        <td class="Mon"></td>
+        <td class="Tues"></td>
+        <td class="Wed"></td>
+        <td class="Thu"></td>
+        <td class="Fry"></td>
+        </col>
+        <tr class="gridDark">
+            <th>11:30-12:30</th>
+            <td class="Mon"></td>
+            <td class="Tues"></td>
+            <td class="Wed"></td>
+            <td class="Thu"></td>
+            <td class="Fry"></td>
         </tr>
         <tr class="gridLight">
-          <th>10:30-11:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+            <th>12:30-13:30</th>
+            <td class="Mon"></td>
+            <td class="Tues"></td>
+            <td class="Wed"></td>
+            <td class="Thu"></td>
+            <td class="Fry"></td>
         </tr>
         <tr class="gridDark">
-          <th>11:30-12:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+            <th>13:30-14:30</th>
+            <td class="Mon"></td>
+            <td class="Tues"></td>
+            <td class="Wed"></td>
+            <td class="Thu"></td>
+            <td class="Fry"></td>
         </tr>
-        <tr class="gridLight">
-          <th>12:30-13:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="gridDark">
-          <th>13:30-14:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </main>
-
+    </table>
+</main>
+<div class="footerWrapper">
     <footer>
-      <ul>
-          <li><b href="#" class="appName">EII Student Kit</b></li>
-          <li><a href="#" class="textLink">About us</a></li>
-          <li><a href="#" class="textLink">Terms</a></li>
-          <li><a href="#" class="iconLink"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="#" class="iconLink"><i class="fa-brands fa-github"></i></a></li>
-      </ul>
-      <article>
-          <span>Contacto: <a href="#">adminKitStudent@gmail.com</a></span>
-          <a href="#" class="textLink" >Preguntas frecuentes</a>
-      </article>
-  </footer>
+        <div class="footerItem" id="footerLeft">
+            <ul>
+                <li><b href="#" class="appName">EII Student Kit</b></li>
+                <li><a href="#" class="textLink">About us</a></li>
+                <li><a href="#" class="textLink">Terms</a></li>
+                <li><a href="#" class="iconLink wideShow"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#" class="iconLink wideShow"><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+        </div>
+        <div class="footerItem" id="footerRight">
+            <span>Contacto: <a href="#" id="footerEmail">adminKitStudent@gmail.com</a></span>
+            <a href="#" class="textLink" >Preguntas frecuentes</a>
+        </div>
+    </footer>
+</div>
 </body>
 </html>

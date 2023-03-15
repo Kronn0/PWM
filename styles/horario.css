@@ -39,6 +39,35 @@ tableHeader{
     order: 0;
 }
 
+th button{
+     border: transparent;
+     cursor: pointer;
+}
+
+.arrowIcon{
+    font-size: 35px;
+    color: #919191;
+}
+
+
+
+@media (max-width: 641px){
+    .Tues{
+        display:none;
+    }
+    .Wed{
+        display:none;
+    }
+    .Thu{
+        display:none;
+    }
+    .Fry{
+        display:none;
+    }
+
+
+}
+
 table{
     margin: 1%;
     flex:auto;
