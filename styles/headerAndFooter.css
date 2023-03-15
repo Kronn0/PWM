@@ -3,22 +3,7 @@
     font-family: 'Poppins';
 }
  
- html {
-    margin: 0px;
-    height: 100%;
- }
- 
- body {
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-    margin: 0px;
- }
 
-main{
-    flex:1;
-}
  
 header a:link{
     color:white;
@@ -39,6 +24,7 @@ header a:hover{
     display: flex;
     margin: 0;
     min-height: 50px;
+    grid-column: span 3;
 }
 
 header {
@@ -49,7 +35,7 @@ header {
     padding-right: 32px;
     align-items: center;
     width: 100%;
-}
+}   
 
 .headerItem{
     display: flex;
@@ -121,6 +107,7 @@ ion-icon {
     display: flex;
     margin: 0;
     min-height: 50px;
+    grid-row: 3;
 
 }
 
@@ -196,4 +183,14 @@ footer ion-icon{
     span.wideHide {display:inline-block}
     span.wideShow {display:none}
     footer ul {display:inline-block}
+}
+
+@media (max-width: 420px){
+    .wideHide ion-icon{
+        font-size: 30px;
+    }
+
+    footer * {
+        font-size: 10px;
+    }
 }
