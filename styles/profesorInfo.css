@@ -89,9 +89,19 @@ main h1 {
 
 
 
+.footerWrapper{
+    grid-row: 4;
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0px 15px 0px 15px;
+}
 
 
-  @media screen and (max-width: 768px){
+
+  @media screen and (max-width: 640px){
     body{
         grid-template-rows: auto auto 1fr auto;
     }
@@ -108,9 +118,6 @@ main h1 {
         grid-column: span 3;
     }
 
-    footer{
-        grid-row: 4;
-    }
 
     #searchBar{
         border-bottom: none;
@@ -127,33 +134,4 @@ main h1 {
         display: block;
     }
   }
-
-
-  @media (min-width: 641px) {
-    span.wideHide {display:none}
-    span.wideShow {
-        display:inline-block
-        
-    }
-    footer ul {display:flex}
-}
-
-@media (max-width: 640px) {
-    span.wideHide {
-        display:inline-block;
-        color: white;
-    }
-    span.wideShow {display:none}
-    footer ul {display:inline-block}
-}
-
-@media (max-width: 420px){
-    .wideHide ion-icon{
-        font-size: 30px;
-    }
-
-    footer * {
-        font-size: 10px;
-    }
-}
 
