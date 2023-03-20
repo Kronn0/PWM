@@ -18,57 +18,6 @@
     padding: 0px;
  }
 
- 
- header {
-    background-color: #0066a1;
-    grid-column: span 3;
-}
-
- #navbar {
-    background-color: #0066a1;
-    display: flex;
-    flex-direction: row;
-}
- 
-#navbar .textLink{
-    color:white;
-    text-decoration: none;
-}
-
-#navbar ul{
-    display: flex;
-    flex: 2;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 10px;
-}
-
-#userButton{
-    flex: 1;
-    color: white;
-    text-align: right;
-    margin-right: 20px;
-    margin: 10px 20px 10px 20px;
-}
-
-
-
-#navbar ul li {
-    color: white;
-    list-style-type: none;
-}
-
-#logoContainer {
-    flex: 1;
-    margin: 5px;
-
-}
-
-#logotipoImg{
-    height: 30px;
-    width: 30px;
-}
-
 #navbarAsignaturas{
     grid-row: 2;
     grid-column: span 2;
@@ -81,7 +30,6 @@
     margin: 10px;
     background-color: #d9d9d9;
     border-radius: 80px;
-    width: 100%;
 }
 
 #buscador {
@@ -101,7 +49,7 @@
 #inputSearch {
     border: 0;
     background-color: #d9d9d9;
-    width: 75%;
+    width: 60%;
 }
 
 #inputSearch:focus {
@@ -165,11 +113,30 @@ main{
     border-radius: 20px;
 }
 
-#filtrosContainer button{
-    justify-content: center;
+
+#filterHeader button{
+    background-color: #d9d9d9;
+    border: none;
 }
 
-footer{
+#filterButtonContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#filterButton{
+    background-color: #F89A36;
+    color: white;
+    justify-content: center;
+    border-radius: 15px;
+    border: 0;
+    width: 80%;
+    height: 40px;
+    margin: 20px;
+}
+
+.footerWrapper{
     grid-row: 4;
     grid-column: span 3;
     display: flex;
@@ -179,68 +146,53 @@ footer{
     padding: 0px 15px 0px 15px;
 }
 
-.appName{
-    color: #F89A36;
-}
-
-.textLink{
-    text-decoration: none;
-    color: #0066A1;
-}
-
-.iconLink{
-    color: #0066A1;
-}
-
-footer ul {
-    display: flex;
-    flex: 2;
-    justify-content: space-around   ;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-footer article {
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-}
-
-footer article * {
-    text-align: end;
-    color: #0066A1;
-    font-size: 12px;
-}
-
-#filterButton{
-    background-color: #F89A36;
-    color: white;
-    border-radius: 15px;
-    border: 0;
-    width: 65%;
-    height: 40px;
-    margin: 20px;
+.itemHide {
+    display: none;
 }
 
 
+@media screen and (max-width: 640px){
+    body{
+        grid-template-rows: auto auto auto 1fr auto;
+    }
 
-/* Scrollbar style */
-::-webkit-scrollbar {
-    width: 7px;
+    #navbarAsignaturas{
+        flex-direction: column-reverse;
+        justify-content:start;
+        grid-row: 3;
+        grid-column: span 3;
+        margin: 0px 20px 0px 20px;
+    }
+
+    #filterSection, #filterButtonContainer{
+        display: none
+    }
+
+    #filterHeader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #filtrosContainer{
+        grid-row: 2;
+        grid-column: span 3;
+        margin: 10px 30px;
+    }
+
+    main{
+        grid-row: 4;
+        grid-column: span 3;
+    }
+
+    .footerWrapper{
+        grid-row: 5;
+    }
+
+    .itemHide{
+        display: inline-block
+    }
+
   }
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-  }
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+
 

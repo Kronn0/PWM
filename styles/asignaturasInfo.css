@@ -19,54 +19,6 @@
  }
 
  
- header {
-    background-color: #0066a1;
-    grid-column: span 3;
-}
-
- #navbar {
-    background-color: #0066a1;
-    display: flex;
-    flex-direction: row;
-}
- 
-#navbar .textLink{
-    color:white;
-    text-decoration: none;
-}
-
-#navbar ul{
-    display: flex;
-    flex: 2;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 10px;
-}
-
-#userButton{
-    flex: 1;
-    color: white;
-    text-align: right;
-    margin-right: 20px;
-    margin: 10px 20px 10px 20px;
-}
-
-#navbar ul li {
-    color: white;
-    list-style-type: none;
-}
-
-#logoContainer {
-    flex: 1;
-    margin: 5px;
-
-}
-
-#logotipoImg{
-    height: 30px;
-    width: 30px;
-}
-
 main {
     grid-column: span 2;
     border-radius: 20px;
@@ -138,9 +90,8 @@ main h1 {
 }
 
 
-
-footer{
-    grid-row: 3;
+.footerWrapper{
+    grid-row: 4;
     grid-column: span 3;
     display: flex;
     flex-direction: row;
@@ -149,38 +100,36 @@ footer{
     padding: 0px 15px 0px 15px;
 }
 
-.appName{
-    color: #F89A36;
-}
+@media screen and (max-width: 640px){
+    body{
+        grid-template-rows: auto auto 1fr auto;
+    }
+    
+    #searchContainer{
+        margin: auto;
+        grid-row: 2;
+        grid-column: span 3;
+        width: 90%;
+        margin-top: 10px;
+    }
 
-.textLink{
-    text-decoration: none;
-    color: #0066A1;
-}
+    main{
+        grid-column: span 3;
+    }
 
-.iconLink{
-    color: #0066A1;
-}
 
-footer ul {
-    display: flex;
-    flex: 2;
-    justify-content: space-around   ;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
+    #searchBar{
+        border-bottom: none;
+    }
 
-footer article {
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-}
+    #searchMenu{
+        display: none;
+    }
 
-footer article * {
-    text-align: end;
-    color: #0066A1;
-    font-size: 12px;
-}
+  }
 
+  @media screen and (max-width: 420px){
+    #infoContainer{
+        display: block;
+    }
+  }
