@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles\login.css" />
         <title> Login - EII STUDENT KIT </title>  
+        <!-- Mantener datos en submit -->
+        <script src="./scripts/forms/saveFormData.js"></script>
+        <!-- Cargar datos tras submit -->
+        <script src="./scripts/forms/loadFormData.js"></script>
     </head>
     <body>
         <section id="leftContainer">
@@ -16,17 +20,17 @@
                 <form id="loginForm">
                     <div class="formContainer">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="Email" name="email" required>
+                        <input id="emailLoginForm" type="email" placeholder="Email" name="email" required>
                     </div>
                     <div class="formContainer">
                         <label for="password">Password</label>
-                        <input type="password" placeholder="Contraseña" name="password" required>
+                        <input id="passwordLoginForm" type="password" placeholder="Contraseña" name="password" required>
                     </div>                 
                     <div class= "altOptionsContainer"id="rememeberMeContainer">
                     <input type="checkbox" id="rememeberMeCheck"></input>
                     <label for="checkbox" id="rememberMeLabel">Remember me?</label>
                     </div>
-                    <button type="sumbit" id="loginButton">Login</button>
+                    <button type="sumbit" id="loginButton" onclick="SaveFormData()">Login</button>
                     <p>¿Todavia no tienes Cuenta?
                     <a href="#">Regístrate</a></p> 
                     
