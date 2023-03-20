@@ -172,14 +172,14 @@ footer ion-icon{
 
 
 @media (min-width: 641px) {
-    span.wideHide {display:none}
-    span.wideShow {display:inline-block}
+    .wideHide {display:none}
+    .wideShow {display:inline-block}
     footer ul {display:flex}
 }
 
 @media (max-width: 640px) {
-    span.wideHide {display:inline-block}
-    span.wideShow {display:none}
+    .wideHide {display:inline-block}
+    .wideShow {display:none}
     footer ul {display:inline-block}
 }
 
