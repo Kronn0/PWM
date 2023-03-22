@@ -4,7 +4,6 @@ fetch('./../data/teachers.json')
     .then(response => response.json())
     .then(data => {
         data.forEach(teacher => {
-            console.log(teacher.profesorado.profesor)
             teachersUl.insertAdjacentHTML(
                 'beforeend', 
                 `<div>

@@ -10,8 +10,6 @@ const wednesdayHour = document.getElementById("wednesdayHourText")
 const thursdayHour = document.getElementById("thursdayHourText")
 const fridayHour = document.getElementById("fridayHourText")
 
-
-
 function getQueryParam() {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get('id');
@@ -21,7 +19,8 @@ fetch('./../data/teachers.json')
     .then(response => response.json())
     .then(data => {
         const teacherId = getQueryParam()
-        const teacher = data.find(item => item.id === teacherId) || data[0]
+        const teacher = data.find(item => item.id === parseInt(teacherId)) || data[0]
+
 
         teacherName.innerHTML = `${teacher.profesorado.profesor}`
         knowledge.innerHTML = `<strong>Áreas de conocimiento: </strong> ----`
