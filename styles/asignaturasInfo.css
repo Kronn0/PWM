@@ -11,11 +11,15 @@
  body {
     width: 100%;
     max-height: 100vh;
-    display: grid;
     grid-template-rows: 8% 82% 10%;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
     padding: 0px;
+    display: grid !important;
+}
+
+ .headerWrapper{
+    grid-column: span 3;
  }
 
  
