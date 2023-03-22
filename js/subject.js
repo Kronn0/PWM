@@ -18,7 +18,6 @@ fetch('./../data/subjects.json')
 
         const subjectId = getQueryParam()
         const asignatura = data.find(item => item.id === subjectId) || data[0]
-        
         subjectName.innerHTML = `${asignatura.asignatura}`
         type.innerHTML = `<strong>Tipo: </strong>${asignatura.tipo !== "" ? asignatura.tipo : "-----"}`
         grade.innerHTML = `<strong>Titulación: </strong>${asignatura.titulacion !== "" ? asignatura.titulacion : "----"}`
