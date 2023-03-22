@@ -45,9 +45,7 @@
         </article>
         <article id="hoursContainer">
             <p class="simpleText"><b>Horas de tutoría:</b></p>
-            <section id="hoursTable">
-                
-                <p>Primer semestre</p>
+            <section id="hoursTable">                
                 <table class="striped gray">
                     <thead>
                       <tr class="color">
@@ -60,32 +58,11 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="center" style="width: 100px; border-right: 2px solid white;">-</td>
-                        <td class="center" style="width: 100px; border-right: 2px solid white;">10:30 - 11:30</td>
-                        <td class="center" style="width: 100px; border-right: 2px solid white;">-</td>
-                        <td class="center" style="width: 100px; border-right: 2px solid white;">-</td>
-                        <td class="center" style="width: 100px;">12:30 - 2:30</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p>Segundo semestre</p>
-                  <table class="striped gray">
-                    <thead>
-                      <tr class="color">
-                        <th class="center" style="width: 100px; border-right: 2px solid white;">Lunes</th>
-                        <th class="center" style="width: 100px; border-right: 2px solid white;">Martes</th>
-                        <th class="center" style="width: 100px; border-right: 2px solid white;">Miercoles</th>
-                        <th class="center" style="width: 100px; border-right: 2px solid white;">Jueves</th>
-                        <th class="center" style="width: 100px;">Viernes</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="center" style="width: 100px; border-right: 2px solid white;">-</td>
-                        <td class="center" style="width: 100px; border-right: 2px solid white;">10:30 - 11:30</td>
-                        <td class="center" style="width: 100px; border-right: 2px solid white;">-</td>
-                        <td class="center" style="width: 100px; border-right: 2px solid white;">-</td>
-                        <td class="center" style="width: 100px;">12:30 - 2:30</td>
+                        <td class="center" id="mondayHourText" style="width: 100px; border-right: 2px solid white;"></td>
+                        <td class="center" id="tuesdayHourText" style="width: 100px; border-right: 2px solid white;"></td>
+                        <td class="center" id="wednesdayHourText" style="width: 100px; border-right: 2px solid white;"></td>
+                        <td class="center" id="thursdayHourText" style="width: 100px; border-right: 2px solid white;"></td>
+                        <td class="center" id="fridayHourText" style="width: 100px;"></td>
                       </tr>
                     </tbody>
                   </table>
@@ -102,18 +79,9 @@
             <span class="simpleText">Profesores</span>
         </span>
         <article id="searchMenu">
-            <div>
-                <span>Carmelo Rodriguez Santana</span>
-                <p>Correo electrónico: carmelo@ulpgc.es</p>
-            </div>
-            <div>
-                <span>Carmelo Rodriguez Santana</span>
-                <p>Correo electrónico: carmelo@ulpgc.es</p>
-            </div>
-            <div>
-                <span>Carmelo Rodriguez Santana</span>
-                <p>Correo electrónico: carmelo@ulpgc.es</p>
-            </div>
+            <ul id="teachersListContainer">
+                
+            </ul>
         </article>
     </section>
     <div class="footerWrapper">
@@ -134,5 +102,6 @@
     </footer>
     </div>
     <script src="./js/teacher.js"></script>
+    <script src="./js/listTeachers.js"></script>
 </body>
 </html>

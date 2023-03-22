@@ -75,12 +75,25 @@ main h1 {
     margin-left: 20px;
 }
 
-
-#searchMenu div p{
-    font-size: 14px;
-    margin: 0px 0px 20px 0px;
+#searchMenu{
+    overflow-y: scroll;
+    height: 350px;
+    width: 100%;
+    margin-top: 20px;
 }
 
+#teachersListContainer{
+    list-style-type: none;
+}
+
+#teachersListContainer div{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#teachersListContainer p {
+    margin: 0 !important
+}
 
 
 .simpleText {
