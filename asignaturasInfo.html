@@ -33,19 +33,19 @@
     </div>
     
     <main>
-        <h1 class="simpleText">Nombre del profesor</h1>
+        <h1 id="nameSubjectText"></h1>
         <article id="infoContainer">
-            <div>
-                <p class="simpleText"><b>Tipo:</b> Obligatoria</p>
-                <p class="simpleText"><b>Titulacion:</b> -------</p>
+            <div class="infoContainer">
+                <p class="simpleText" id="typeText"></p>
+                <p class="simpleText" id="gradeText"></p>
             </div>
             <div>
-                <p class="simpleText"><b>Departamento:</b> Departamento</p>
-                <p class="simpleText"><b>Duracion:</b> --------</p>
+                <p class="simpleText" id="departmentText"></p>
+                <p class="simpleText" id="durationText"></p>
             </div>
             <div>
-                <p class="simpleText"><b>Créditos:</b> 6</p>
-                <p class="simpleText"><b>Año:</b> Tercer año</p>
+                <p class="simpleText" id="creditsText"></p>
+                <p class="simpleText" id="yearSubjectText"></p>
             </div>
         </article>
         <span class="simpleText"><b>Profesorado:</b></span>
@@ -67,18 +67,9 @@
             <span class="simpleText">Asignaturas</span>
         </span>
         <article id="searchMenu">
-            <div>
-                <span>0000 - Asignatura</span>
-                <p>Año:</p>
-            </div>
-            <div>
-                <span>0000 - Asignatura</span>
-                <p>Año:</p>
-            </div>
-            <div>
-                <span>0000 - Asignatura</span>
-                <p>Año:</p>
-            </div>
+            <ul id="subjectsListContainer">
+                
+            </ul>
         </article>
     </section>
     <div class="footerWrapper">
@@ -98,6 +89,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="./js/subject.js"></script>
+    <script src="./js/listSubjects.js"></script>
 </body>
 </html>

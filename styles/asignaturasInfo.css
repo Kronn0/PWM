@@ -10,7 +10,7 @@
  
  body {
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     display: grid;
     grid-template-rows: 8% 82% 10%;
     grid-template-columns: 1fr 1fr 1fr;
@@ -78,15 +78,30 @@ main h1 {
 
 }
 
-#searchMenu div p{
-    font-size: 14px;
-    margin: 0px 0px 20px 0px;
+#searchMenu{
+    overflow-y: scroll;
+    height: 350px;
 }
+
+#subjectsListContainer{
+    list-style-type: none;
+}
+
+#subjectsListContainer div{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#subjectsListContainer p {
+    margin: 0 !important
+}
+
 
 
 
 .simpleText {
     color: #292929;
+    font-size: 13px;
 }
 
 
@@ -99,6 +114,11 @@ main h1 {
 
     padding: 0px 15px 0px 15px;
 }
+
+.infoContainer{
+    
+}
+
 
 @media screen and (max-width: 640px){
     body{
