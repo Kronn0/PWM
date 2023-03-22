@@ -12,20 +12,25 @@
 </head>
 
 <body>
-  <header>
-    <nav id="navbar">
-      <div id="logoContainer">
-        <img id="logotipoImg" src="media/placeholder.png" alt="logotipo">
-
-      </div>
-      <ul>
-        <li><a href="#" class="textLink">Horario</a></li>
-        <li><a href="#" class="textLink">Profesorado</a></li>
-        <li><a href="#" class="textLink">Asignaturas</a></li>
-      </ul>
-      <a href="#" id="userButton" class="textLink">Pepe Fernandez Hernandez</a>
-    </nav>
-  </header>
+  <div class="headerWrapper">
+    <header>
+        <div class="headerItem">
+            <img id="logotipoImg" src="media/placeholder.png" alt="logotipo">
+        </div>
+        <div class="headerItem headerItemMain">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#"><span class="wideShow">Horario</span><span class="wideHide"><ion-icon name="calendar"></ion-icon></span></a></li>
+                    <li><a href="#"><span class="wideShow">Profesorado</span><span class="wideHide"><ion-icon name="id-card"></ion-icon></span></a></li>
+                    <li><a href="#"><span class="wideShow">Asignaturas</span><span class="wideHide"><ion-icon name="school"></ion-icon></span></a></li>
+                </ul>    
+            </nav>
+        </div>
+        <div class="headerItem" id="userWrapper">
+            <a href="#" id="userButton"><span class="wideShow">Pepe Fernandez Hernandez</span><span class="wideHide"><ion-icon name="person-circle"></ion-icon></span></a>
+        </div>
+    </header>
+</div>
 
   <main>
 
@@ -157,20 +162,23 @@
         </div>
         </editZone>
         </main>
-
-  <footer>
-    <ul>
-      <li><b href="#" class="appName">EII Student Kit</b></li>
-      <li><a href="#" class="textLink">About us</a></li>
-      <li><a href="#" class="textLink">Terms</a></li>
-      <li><a href="#" class="iconLink"><i class="fa-brands fa-twitter"></i></a></li>
-      <li><a href="#" class="iconLink"><i class="fa-brands fa-github"></i></a></li>
-    </ul>
-    <article>
-      <span>Contacto: <a href="#">adminKitStudent@gmail.com</a></span>
-      <a href="#" class="textLink">Preguntas frecuentes</a>
-    </article>
-  </footer>
+        <div class="footerWrapper">
+          <footer>
+              <div class="footerItem" id="footerLeft">
+                  <ul>
+                      <li><b href="#" class="appName">EII Student Kit</b></li>
+                      <li><a href="#" class="textLink">About us</a></li>
+                      <li><a href="#" class="textLink">Terms</a></li>
+                      <li><a href="#" class="iconLink wideShow"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                      <li><a href="#" class="iconLink wideShow"><ion-icon name="logo-github"></ion-icon></a></li>
+                  </ul>
+              </div>
+              <div class="footerItem" id="footerRight">
+                  <span>Contacto: <a href="#" id="footerEmail">adminKitStudent@gmail.com</a></span>
+                  <a href="#" class="textLink" >Preguntas frecuentes</a>
+              </div>
+          </footer>
+      </div>
 </body>
 
 </html>
