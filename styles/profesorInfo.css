@@ -16,6 +16,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
     padding: 0px;
+    display: grid !important;
+}
+
+ .headerWrapper{
+    grid-column: span 3;
  }
 
  
@@ -25,7 +30,7 @@
 main {
     grid-column: span 2;
     border-radius: 20px;
-    background-color: #d9d9d9;
+    background-color: #edecec;
     margin: 20px;
     padding: 10px;
     display: flex;
@@ -53,7 +58,7 @@ main h1 {
     align-items: center;
     margin: 20px 30px 10px 50px;
     padding: 10px;
-    background-color: #d9d9d9;
+    background-color: #edecec;
     border-radius: 20px;
 }
 
@@ -75,12 +80,25 @@ main h1 {
     margin-left: 20px;
 }
 
-
-#searchMenu div p{
-    font-size: 14px;
-    margin: 0px 0px 20px 0px;
+#searchMenu{
+    overflow-y: scroll;
+    height: 350px;
+    width: 100%;
+    margin-top: 20px;
 }
 
+#teachersListContainer{
+    list-style-type: none;
+}
+
+#teachersListContainer div{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#teachersListContainer p {
+    margin: 0 !important
+}
 
 
 .simpleText {
@@ -127,6 +145,30 @@ main h1 {
         display: none;
     }
 
+  }
+
+  table {
+    margin: 0 auto;
+    font-size: 14px;
+    background: #d9d9d9;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .striped tr:nth-of-type(even) {
+    background-color: #f6f6f6;
+  }
+  
+  .gray td {
+    color: #919191;
+  }
+  
+  .color th {
+    color: #919191;
+  }
+  
+  .center {
+    text-align: center;
   }
 
   @media screen and (max-width: 420px){

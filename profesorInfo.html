@@ -13,40 +13,59 @@
 </head>
 <body>
     <div class="headerWrapper">
-        <header>
+    <header>
             <div class="headerItem">
                 <img id="logotipoImg" src="media/placeholder.png" alt="logotipo">
             </div>
             <div class="headerItem headerItemMain">
                 <nav id="navbar">
-                    <ul>
+            <ul>
                         <li><a href="#"><span class="wideShow">Horario</span><span class="wideHide"><ion-icon name="calendar"></ion-icon></span></a></li>
                         <li><a href="#"><span class="wideShow">Profesorado</span><span class="wideHide"><ion-icon name="id-card"></ion-icon></span></a></li>
                         <li><a href="#"><span class="wideShow">Asignaturas</span><span class="wideHide"><ion-icon name="school"></ion-icon></span></a></li>
-                    </ul>    
-                </nav>
+            </ul>
+        </nav>
             </div>
             <div class="headerItem" id="userWrapper">
                 <a href="#" id="userButton"><span class="wideShow">Pepe</span><span class="wideHide"><ion-icon name="person-circle"></ion-icon></span></a>
             </div>
-        </header>
+    </header>
     </div>
     <main>
-        <h1 class="simpleText">Nombre del profesor</h1>
+        <h1 id="nameTeacherText"></h1>
         <article id="infoContainer">
             <div>
-                <p class="simpleText"><b>Area de conocimiento:</b> -------</p>
-                <p class="simpleText"><b>Correo:</b> profesor@ulpgc.es</p>    
+                <p class="simpleText" id="knowledgeText"></p>
+                <p class="simpleText" id="emailText"></p>    
             </div>
             <div>
-                <p class="simpleText"><b>Despacho:</b> D0</p>
-                <p class="simpleText"><b>Teléfono:</b> 652842193</p>
+                <p class="simpleText" id="dispatchText"></p>
+                <p class="simpleText" id="phoneText"></p>
             </div>
         </article>
         <article id="hoursContainer">
             <p class="simpleText"><b>Horas de tutoría:</b></p>
-            <section id="hoursTable">
-            
+            <section id="hoursTable">                
+                <table class="striped gray">
+                    <thead>
+                      <tr class="color">
+                        <th class="center" style="width: 100px; border-right: 2px solid white;">Lunes</th>
+                        <th class="center" style="width: 100px; border-right: 2px solid white;">Martes</th>
+                        <th class="center" style="width: 100px; border-right: 2px solid white;">Miercoles</th>
+                        <th class="center" style="width: 100px; border-right: 2px solid white;">Jueves</th>
+                        <th class="center" style="width: 100px;">Viernes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="center" id="mondayHourText" style="width: 100px; border-right: 2px solid white;"></td>
+                        <td class="center" id="tuesdayHourText" style="width: 100px; border-right: 2px solid white;"></td>
+                        <td class="center" id="wednesdayHourText" style="width: 100px; border-right: 2px solid white;"></td>
+                        <td class="center" id="thursdayHourText" style="width: 100px; border-right: 2px solid white;"></td>
+                        <td class="center" id="fridayHourText" style="width: 100px;"></td>
+                      </tr>
+                    </tbody>
+                  </table>
             </section>
         </article>
         <article id="asignaturasContainer">
@@ -60,22 +79,13 @@
             <span class="simpleText">Profesores</span>
         </span>
         <article id="searchMenu">
-            <div>
-                <span>Carmelo Rodriguez Santana</span>
-                <p>Correo electrónico: carmelo@ulpgc.es</p>
-            </div>
-            <div>
-                <span>Carmelo Rodriguez Santana</span>
-                <p>Correo electrónico: carmelo@ulpgc.es</p>
-            </div>
-            <div>
-                <span>Carmelo Rodriguez Santana</span>
-                <p>Correo electrónico: carmelo@ulpgc.es</p>
-            </div>
+            <ul id="teachersListContainer">
+                
+            </ul>
         </article>
     </section>
     <div class="footerWrapper">
-        <footer>
+    <footer>
             <div class="footerItem" id="footerLeft">
                 <ul>
                     <li><b href="#" class="appName">EII Student Kit</b></li>
@@ -89,7 +99,9 @@
                 <span>Contacto: <a href="#" id="footerEmail">adminKitStudent@gmail.com</a></span>
                 <a href="#" class="textLink" >Preguntas frecuentes</a>
             </div>
-        </footer>
+    </footer>
     </div>
+    <script src="./js/teacher.js"></script>
+    <script src="./js/listTeachers.js"></script>
 </body>
 </html>
