@@ -1,0 +1,61 @@
+{
+   "name": "Clases de Prueba",
+   "afternoon": 1,
+   "subjects": [
+      {
+         "subject": "PWM",
+         "classroom": "L3-3",
+         "day": 1,
+         "Group": "45",
+         "week": "ambos",
+         "Ihour": 1,
+         "Duration": 2
+      },
+      {
+         "subject": "PS",
+         "classroom": "L3-3",
+         "day": 1,
+         "Group": "45",
+         "week": "ambos",
+         "Ihour": 3,
+         "Duration": 2
+      },
+      {
+         "subject": "ASR",
+         "classroom": "L3-3",
+         "day": 1,
+         "Group": "45",
+         "week": "ambos",
+         "Ihour": 5,
+         "Duration": 2
+      },
+      {
+         "subject": "FFI",
+         "classroom": "",
+         "day": 4,
+         "Group": "42",
+         "week": "par",
+         "Ihour": 1,
+         "Duration": 2
+      },
+      {
+         "subject": "PWM",
+         "classroom": "A2-4",
+         "day": 4,
+         "Group": "1",
+         "week": "ambos",
+         "Ihour": 6,
+         "Duration": 1
+      },
+      {
+         "subject": "PWM",
+         "classroom": "L3-3",
+         "day": 5,
+         "Group": "1",
+         "week": "ambos",
+         "Ihour": 4,
+         "Duration": 1
+      }
+
+   ]
+}
