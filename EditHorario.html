@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/4e57eda16a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="styles/editHorario.css" />
   <link rel="stylesheet" type="text/css" href="styles/headerAndFooter.css" />
-  <title>Editar Horario - EII STUDENT KIT</title>
+  <link rel="stylesheet" type="text/css" href="styles/editHorario.css" />
+  <title>Header y footer</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-
 <body>
-  <div class="headerWrapper">
-    <header>
-        <div class="headerItem">
-            <img id="logotipoImg" src="media/placeholder.png" alt="logotipo">
-        </div>
-        <div class="headerItem headerItemMain">
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#"><span class="wideShow">Horario</span><span class="wideHide"><ion-icon name="calendar"></ion-icon></span></a></li>
-                    <li><a href="#"><span class="wideShow">Profesorado</span><span class="wideHide"><ion-icon name="id-card"></ion-icon></span></a></li>
-                    <li><a href="#"><span class="wideShow">Asignaturas</span><span class="wideHide"><ion-icon name="school"></ion-icon></span></a></li>
-                </ul>    
-            </nav>
-        </div>
-        <div class="headerItem" id="userWrapper">
-            <a href="#" id="userButton"><span class="wideShow">Pepe Fernandez Hernandez</span><span class="wideHide"><ion-icon name="person-circle"></ion-icon></span></a>
-        </div>
-    </header>
+<div class="headerWrapper">
+  <header>
+    <div class="headerItem">
+      <img id="logotipoImg" src="media/placeholder.png" alt="logotipo">
+    </div>
+    <div class="headerItem headerItemMain">
+      <nav id="navbar">
+        <ul>
+          <li><a href="#"><span class="wideShow">Horario</span><span class="wideHide"><ion-icon name="calendar"></ion-icon></span></a></li>
+          <li><a href="#"><span class="wideShow">Profesorado</span><span class="wideHide"><ion-icon name="id-card"></ion-icon></span></a></li>
+          <li><a href="#"><span class="wideShow">Asignaturas</span><span class="wideHide"><ion-icon name="school"></ion-icon></span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="headerItem" id="userWrapper">
+      <a href="#" id="userButton"><span class="wideShow">Pepe Fernandez Hernandez</span><span class="wideHide"><ion-icon name="person-circle"></ion-icon></span></a>
+    </div>
+  </header>
 </div>
 
   <main>
 
     <tableHeader>
-      <button id="editButton">
-        <img class="pngButton" src="media\editButton.PNG" alt="Side_Imagen">
-      </button>
-      <input type="text" id="nombreHorario" name="nombreHorario" placeholder="NOMBRE HORARIO" required>
-      <div id="optionButtonsContainer">
+
+
         <button class="optionButton" id="okButton">
-          Guardar
+          <span class="wideShow">Guardar</span>
+          <span class="wideHide"><ion-icon name="save"></ion-icon></span>
         </button>
+        <input type="text" id="nombreHorario" name="nombreHorario" placeholder="NOMBRE HORARIO" required>
         <button class="optionButton" id="canButton" name="canButton">
-          Cancelar
+          <span class="wideShow">Cancelar</span>
+          <span class="wideHide"><ion-icon name="trash"></ion-icon></span>
         </button>
 
-      </div>
+
 
     </tableHeader>
     <editZone>
@@ -162,23 +162,23 @@
         </div>
         </editZone>
         </main>
-        <div class="footerWrapper">
-          <footer>
-              <div class="footerItem" id="footerLeft">
-                  <ul>
-                      <li><b href="#" class="appName">EII Student Kit</b></li>
-                      <li><a href="#" class="textLink">About us</a></li>
-                      <li><a href="#" class="textLink">Terms</a></li>
-                      <li><a href="#" class="iconLink wideShow"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                      <li><a href="#" class="iconLink wideShow"><ion-icon name="logo-github"></ion-icon></a></li>
-                  </ul>
-              </div>
-              <div class="footerItem" id="footerRight">
-                  <span>Contacto: <a href="#" id="footerEmail">adminKitStudent@gmail.com</a></span>
-                  <a href="#" class="textLink" >Preguntas frecuentes</a>
-              </div>
-          </footer>
-      </div>
+<div class="footerWrapper">
+  <footer>
+    <div class="footerItem" id="footerLeft">
+      <ul>
+        <li><b href="#" class="appName">EII Student Kit</b></li>
+        <li><a href="#" class="textLink">About us</a></li>
+        <li><a href="#" class="textLink">Terms</a></li>
+        <li><a href="#" class="iconLink wideShow"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#" class="iconLink wideShow"><ion-icon name="logo-github"></ion-icon></a></li>
+      </ul>
+    </div>
+    <div class="footerItem" id="footerRight">
+      <span>Contacto: <a href="#" id="footerEmail">adminKitStudent@gmail.com</a></span>
+      <a href="#" class="textLink" >Preguntas frecuentes</a>
+    </div>
+  </footer>
+</div>
 </body>
 
 </html>
