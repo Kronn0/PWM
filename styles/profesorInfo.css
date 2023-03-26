@@ -134,6 +134,7 @@ main h1 {
 
     main{
         grid-column: span 3;
+        min-width: 300px;
     }
 
 
@@ -147,8 +148,13 @@ main h1 {
 
   }
 
+  #hoursTable{
+    width: 100%;
+}
+
   table {
     margin: 0 auto;
+
     font-size: 14px;
     background: #d9d9d9;
     padding: 10px;

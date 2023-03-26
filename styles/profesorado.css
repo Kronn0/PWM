@@ -171,6 +171,7 @@ main{
         grid-row: 3;
         grid-column: span 3;
         margin: 0px 20px 0px 20px;
+        min-width: 300px;
     }
 
     #filterSection, #filterButtonContainer{
@@ -192,6 +193,7 @@ main{
     main{
         grid-row: 4;
         grid-column: span 3;
+        min-width: 300px;
     }
 
     .footerWrapper{
@@ -202,4 +204,10 @@ main{
         display: inline-block
     }
 
+  }
+  @media screen and (max-width: 420px){
+    #teachersListContainer p{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
   }

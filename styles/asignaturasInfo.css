@@ -49,6 +49,10 @@ main h1 {
     width: 100%;
 }
 
+#profesoresContainer p {
+    font-size: 12px;
+}
+
 
 #searchContainer {
     grid-column: 3;
@@ -135,6 +139,7 @@ main h1 {
 
     main{
         grid-column: span 3;
+        min-width: 300px;
     }
 
 
@@ -152,4 +157,5 @@ main h1 {
     #infoContainer{
         display: block;
     }
+    
   }
