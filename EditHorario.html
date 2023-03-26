@@ -41,7 +41,7 @@
           <span class="wideShow">Guardar</span>
           <span class="wideHide"><ion-icon name="save"></ion-icon></span>
         </button>
-        <input type="text" id="nombreHorario" name="nombreHorario" placeholder="NOMBRE HORARIO" required>
+        <input value="" type="text" id="nombreHorario" name="nombreHorario" placeholder="NOMBRE HORARIO" required>
         <button class="optionButton" id="canButton" name="canButton">
           <span class="wideShow">Cancelar</span>
           <span class="wideHide"><ion-icon name="trash"></ion-icon></span>
@@ -54,61 +54,61 @@
       <table class="horario">
 
         <tr class="rowOfDays">
-          <th scope="row"></th>
-          <th>LUNES</th>
-          <th>MARTES</th>
-          <th>MIÉRCOLES</th>
-          <th>JUEVES</th>
-          <th>VIERNES</th>
-        </tr>
-        <tr class="gridLight">
-          <th>8:30-9:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="gridDark">
-          <th>9:30-10:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="gridLight">
-          <th>10:30-11:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="gridDark">
-          <th>11:30-12:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="gridLight">
-          <th>12:30-13:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="gridDark">
-          <th>13:30-14:30</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
+          <th></th>
+          <th class="Mon">LUNES</th>
+          <th class="Tues">MARTES</th>
+          <th class="Wed">MIÉRCOLES</th>
+          <th class="Thu">JUEVES</th>
+          <th class="Fry">VIERNES</th>
+      </tr>
+      <tr class="gridLight">
+          <th id="TH1"></th>
+          <td class="Mon" id="L1"></td>
+          <td class="Tues" id="M1"></td>
+          <td class="Wed" id="X1"></td>
+          <td class="Thu" id="J1"></td>
+          <td class="Fry" id="V1"></td>
+      </tr>
+      <tr class="gridDark">
+          <th id="TH2"></th>
+          <td class="Mon" id="L2"></td>
+          <td class="Tues" id="M2"></td>
+          <td class="Wed" id="X2"></td>
+          <td class="Thu" id="J2"></td>
+          <td class="Fry" id="V2"></td>
+      </tr>
+      <col class="gridLight">
+      <th id="TH3"></th>
+      <td class="Mon" id="L3"></td>
+      <td class="Tues" id="M3"></td>
+      <td class="Wed" id="X3"></td>
+      <td class="Thu" id="J3"></td>
+      <td class="Fry" id="V3"></td>
+      </col>
+      <tr class="gridDark">
+          <th id="TH4"></th>
+          <td class="Mon" id="L4"></td>
+          <td class="Tues" id="M4"></td>
+          <td class="Wed" id="X4"></td>
+          <td class="Thu" id="J4"></td>
+          <td class="Fry" id="V4"></td>
+      </tr>
+      <tr class="gridLight">
+          <th id="TH5"></th>
+          <td class="Mon" id="L5"></td>
+          <td class="Tues" id="M5"></td>
+          <td class="Wed" id="X5"></td>
+          <td class="Thu" id="J5"></td>
+          <td class="Fry" id="V5"></td>
+      </tr>
+      <tr class="gridDark">
+          <th id="TH6"></th>
+          <td class="Mon" id="L6"></td>
+          <td class="Tues" id="M6"></td>
+          <td class="Wed" id="X6"></td>
+          <td class="Thu" id="J6"></td>
+          <td class="Fry" id="V6"></td>
+      </tr>
       </table>
       <div id="asignaturaOptions">
         <div id="SearchContainer">
@@ -116,7 +116,7 @@
           <input type="text" id="filtroAsignaturaHorarios" placeholder="Filtrar por Nombre">
         </div>
         <div id="ratioButtonsContainer">
-          <input type="radio" id="horarioManana" name="pref_horario" value="HorarioManana">
+          <input type="radio" id="horarioManana" name="pref_horario" value="HorarioManana" checked>
           <label for="horarioManana">Horario mañana</label>
           <input type="radio" id="horarioTarde" name="pref_horario" value="HorarioTarde">
           <label for="horarioTarde">Horario tarde</label>
@@ -177,6 +177,7 @@
       <span>Contacto: <a href="#" id="footerEmail">adminKitStudent@gmail.com</a></span>
       <a href="#" class="textLink" >Preguntas frecuentes</a>
     </div>
+    <div><script src="./scripts/fetch/scheduleToEdit.js"></script></div>
   </footer>
 </div>
 </body>
