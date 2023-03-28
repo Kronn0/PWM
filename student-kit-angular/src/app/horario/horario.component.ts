@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./horario.component.css']
 })
 export class HorarioComponent {
+  buttonToggle:boolean = false;
 
+  toggleMenu(){
+    this.buttonToggle = !this.buttonToggle
+  }
 }

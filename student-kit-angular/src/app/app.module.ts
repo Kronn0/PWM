@@ -9,6 +9,11 @@ import { HomeComponent } from './home/home.component';
 import { AsignaturasComponent } from './asignaturas/asignaturas.component';
 import { ProfesoresComponent } from './profesores/profesores.component';
 import { HorarioComponent } from './horario/horario.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import { FilterCardComponent } from './asignaturas/components/filter-card/filter-card.component';
+import { FilterPipe } from './pipes/filter.pipes';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -18,11 +23,16 @@ import { HorarioComponent } from './horario/horario.component';
     HomeComponent,
     AsignaturasComponent,
     ProfesoresComponent,
-    HorarioComponent
+    HorarioComponent,
+    FilterCardComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
