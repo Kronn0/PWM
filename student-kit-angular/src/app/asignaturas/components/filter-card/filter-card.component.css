@@ -5,3 +5,8 @@
 .filterContainer{
     height: 450px;
 }
+
+.checkbox-item{
+    height: 18px;
+    width: 18px
+}

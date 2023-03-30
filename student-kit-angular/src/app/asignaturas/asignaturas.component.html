@@ -28,7 +28,7 @@
             </div>
             <article class="m-2 col-sm-12 rounded-4 listContainer">
                 <ul class="list-unstyled">
-                    <div *ngFor="let subject of subjects | appFilter: searchText" class="border-bottom m-3">
+                    <div *ngFor="let subject of subjects | appFilter: searchText: semestersCheckboxes" class="border-bottom m-3">
                         <p>{{ subject.asignatura }}</p>
                         <p>{{ subject.duracion }}</p>
                     </div>
@@ -36,7 +36,7 @@
             </article>
         </article>
         <article class="col-md-4 p-3">
-            <app-filter-card></app-filter-card>
+            <app-filter-card [inputCheckboxes]="semestersCheckboxes" [searchText]="searchText"></app-filter-card>
         </article>
     </section>
       

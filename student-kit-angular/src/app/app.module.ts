@@ -13,7 +13,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterCardComponent } from './asignaturas/components/filter-card/filter-card.component';
 import { FilterPipe } from './pipes/filter.pipes';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MatCheckboxModule } from '@angular/material/checkbox'
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { FormsModule } from '@angular/forms'
     NgbModule,
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

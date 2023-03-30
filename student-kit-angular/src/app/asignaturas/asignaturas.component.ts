@@ -12,6 +12,11 @@ export class AsignaturasComponent implements OnInit {
   searchText: string = ""
   subjects: subject[] = []
 
+  semestersCheckboxes = [
+    {name: "firstSemester", label: "1er. semestre", isChecked: false},
+    {name: "secondSemester", label: "2ş semestre", isChecked: false}
+  ]
+
   constructor(private getSubjectsService:GetSubjectsServiceService){}
 
   ngOnInit(): void{

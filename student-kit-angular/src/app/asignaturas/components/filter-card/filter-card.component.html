@@ -2,8 +2,11 @@
     <div class="p-2">
         <p class="h5 fw-bold">Filtros</p>
     </div>
-    <div class="d-flex flex-column p-2 filterContainer">
-
+    <div class="d-flex flex-column p-1 filterContainer">
+        <p class="fw-bold">Semestres</p>
+        <div *ngFor="let semester of inputCheckboxes">
+            <input type="checkbox" name="{{semester.name}}" (change)="onChangeCheckbox($event, semester.name)"/>
+            <label>{{semester.label}}</label>
+        </div>
     </div>    
-
 </div>
