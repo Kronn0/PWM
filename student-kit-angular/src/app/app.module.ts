@@ -15,7 +15,8 @@ import { FilterCardComponent } from './asignaturas/components/filter-card/filter
 import { FilterPipe } from './pipes/filter.pipes';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { MatCheckboxModule } from '@angular/material/checkbox'
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { AsignaturaInfoComponent } from './asignaturas/pages/asignatura-info/asignatura-info.component'
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox'
     HorarioComponent,
     FilterCardComponent,
     FilterPipe,
+    AsignaturaInfoComponent,
   ],
   imports: [
     BrowserModule,
