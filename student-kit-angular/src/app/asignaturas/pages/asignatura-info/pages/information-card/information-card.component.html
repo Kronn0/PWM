@@ -1,0 +1,22 @@
+<div class="m-2 col-sm-12 bg-gray p-3 rounded-4">
+    <h1 *ngIf="subjectObject" class="fs-4 text-center">{{subjectObject.asignatura}}</h1>
+    <article class="col-md-12">
+        <div class="d-flex flex-row col-12">
+            <p class="col-md-6" *ngIf="subjectObject"><span class="fw-bold">Tipo: </span>{{subjectObject.tipo}}</p>
+            <p class="col-md-6" *ngIf="subjectObject"><span class="fw-bold">Titulación: </span>{{subjectObject.titulacion}}</p>    
+        </div>
+        <div class="d-flex flex-row justify-content-evenly col-12">
+            <p class="col-md-6" *ngIf="subjectObject"><span class="fw-bold">Departamento: </span>{{subjectObject.departamento}}</p>
+            <p class="col-md-6" *ngIf="subjectObject"><span class="fw-bold">Duración: </span>{{subjectObject.duracion}}</p>    
+        </div>
+        <div class="d-flex flex-row justify-content-evenly col-12">
+            <p class="col-md-6" *ngIf="subjectObject"><span class="fw-bold">Créditos: </span>{{subjectObject.creditos}}</p>
+            <p class="col-md-6" *ngIf="subjectObject"><span class="fw-bold">Año: </span></p>    
+        </div>
+        <p class="fw-bold">Profesorado:</p>
+        <div class="d-flex flex-row justify-content-center col-12">
+            <a class="linkText link-opacity-75 text-center" target="_blank" href="{{subjectObject.proyectoDocente}}">Proyecto Docente de la asignatura</a>
+        </div>
+    </article>
+
+</div>

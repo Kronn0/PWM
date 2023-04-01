@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetSubjectsServiceService, subject } from '../services/get-subjects-service.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -17,7 +18,11 @@ export class AsignaturasComponent implements OnInit {
     {name: "secondSemester", label: "2ş semestre", isChecked: false}
   ]
 
-  constructor(private getSubjectsService:GetSubjectsServiceService){}
+  constructor(private getSubjectsService:GetSubjectsServiceService, private router: Router){}
+
+  goToChild(id: number){
+    this.router.navigate(['child', id])
+  }
 
   ngOnInit(): void{
     this.getSubjectsService.getSubjects().subscribe((subjects: subject[]) => {

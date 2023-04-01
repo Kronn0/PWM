@@ -1,1 +1,20 @@
-<p>asignatura-info works!</p>
+<main class="m-2">
+    <section class="row">
+        <article class="col-md-8 p-3">
+            <router-outlet></router-outlet>
+        </article>
+        <aside class="col-md-4 p-3">
+            <div class=" m-2 col-sm-12 bg-gray rounded-4 p-2 d-flex flex-column">
+                <h2 class="fs-5 text-center">Asignaturas</h2>
+                <div class=" card-body listContainer my-3">
+                    <div class="d-flex flex-column p-1 " *ngFor="let subject of subjects">
+                        <div routerLink="{{subject.id}}" class="itemList p-1 rounded-3">
+                            <p>{{ subject.asignatura }}</p>
+                            <p>{{ subject.duracion }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+</main>

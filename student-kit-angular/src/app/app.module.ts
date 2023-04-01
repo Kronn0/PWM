@@ -16,7 +16,8 @@ import { FilterPipe } from './pipes/filter.pipes';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { AsignaturaInfoComponent } from './asignaturas/pages/asignatura-info/asignatura-info.component'
+import { AsignaturaInfoComponent } from './asignaturas/pages/asignatura-info/asignatura-info.component';
+import { InformationCardComponent } from './asignaturas/pages/asignatura-info/pages/information-card/information-card.component'
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { AsignaturaInfoComponent } from './asignaturas/pages/asignatura-info/asi
     FilterCardComponent,
     FilterPipe,
     AsignaturaInfoComponent,
+    InformationCardComponent,
   ],
   imports: [
     BrowserModule,

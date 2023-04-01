@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 export interface subject{
   asignatura: string,
-  año: string,
+  year: string,
   creditos: string,
   departamento: string,
   duracion: string,
