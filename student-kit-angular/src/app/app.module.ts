@@ -17,7 +17,8 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { AsignaturaInfoComponent } from './asignaturas/pages/asignatura-info/asignatura-info.component';
-import { InformationCardComponent } from './asignaturas/pages/asignatura-info/pages/information-card/information-card.component'
+import { InformationCardComponent } from './asignaturas/pages/asignatura-info/pages/information-card/information-card.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { InformationCardComponent } from './asignaturas/pages/asignatura-info/pa
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
