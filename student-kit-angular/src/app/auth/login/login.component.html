@@ -1,11 +1,17 @@
-<form [formGroup]="formLogin" (ngSubmit)="submitLogin()">
-    <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="text" class="form-control" formControlName="email">
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Password</label>
-        <input type="password" class="form-control" formControlName="password">
-    </div>
-    <input type="submit" value="Login">
-</form>
+<article class="mt-4 text-center">
+    <h2 class="font-orange fw-bold pb-4">Bienvenido de vuelta</h2>
+</article>
+<article>
+    <form class="col-12" [formGroup]="formLogin" (ngSubmit)="submitLogin()">
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="text" class="form-control" formControlName="email" placeholder="pepe.fernandez110@alu.ulpgc.es">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" formControlName="password" placeholder="contraseña">
+        </div>
+        <input class="col-12 bg-secondary-color border-0 p-2 rounded-3 text-light" type="submit" value="Login">
+        <p class="p-3">¿Todavía no tienes cuenta? <a routerLink="/register" class="link-underline-opacity-0 text-link">Regístrate</a></p>
+    </form>
+</article>

@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 import { LoginComponent } from './login/login.component';
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -23,6 +24,7 @@ import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
     CommonModule,
     ReactiveFormsModule,
     NgbModule,
+    RouterModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
   ],
