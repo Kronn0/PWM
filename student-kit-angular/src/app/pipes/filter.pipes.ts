@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core'
-import { subject } from '../services/get-subjects-service.service'
+import { subject } from '../services/getSubjects/get-subjects-service.service'
 
 @Pipe({name: 'appFilter'})
 export class FilterPipe implements PipeTransform{
@@ -10,17 +10,9 @@ export class FilterPipe implements PipeTransform{
         if(!searchText){
             return items
         }
-
-        items = items.filter(it => {
-            let matchSemester
-            semestersCheckboxes.forEach(semester => {
-                if(semester.isChecked){
-                    matchSemester = it.duracion === semester.label
-                }
-            })
-            return matchSemester
-        })
-        return items
-            
+        searchText = searchText.toLowerCase()
+        return items.filter(it => {
+            return it.asignatura.toLowerCase().includes(searchText)
+        })   
     }
 }

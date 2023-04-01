@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataServiceService } from 'src/app/services/dataService/data-service.service';
-import { GetSubjectsServiceService, subject } from 'src/app/services/get-subjects-service.service';
+import { GetSubjectsServiceService, subject } from 'src/app/services/getSubjects/get-subjects-service.service';
 
 @Component({
   selector: 'app-asignatura-info',
@@ -28,7 +28,4 @@ export class AsignaturaInfoComponent {
       this.dataService.changeParam(this.subjects)
     })
   }
-
-  
-
 }

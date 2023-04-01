@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { find } from 'rxjs';
 import { DataServiceService } from 'src/app/services/dataService/data-service.service';
-import { GetSubjectsServiceService, subject } from 'src/app/services/get-subjects-service.service';
+import { GetSubjectsServiceService, subject } from 'src/app/services/getSubjects/get-subjects-service.service';
 
 @Component({
   selector: 'app-information-card',
