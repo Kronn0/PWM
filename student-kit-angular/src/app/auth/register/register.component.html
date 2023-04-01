@@ -1,12 +1,17 @@
-<h2>Registro de usuario</h2>
-<form [formGroup]="formReg" (ngSubmit)="submitRegister()">
-    <div class="">
-        <label class="form-label">Email</label>
-        <input type="text" class="form-control" formControlName="email">
-    </div>
-    <div class="">
-        <label class="form-label">Password</label>
-        <input type="password" class="form-control" formControlName="password">
-    </div>
-    <input type="submit" value="Enviar">
-</form>
+<article class="mt-4 text-center">
+    <h2 class="font-orange fw-bold pb-4">Crea una cuenta</h2>
+</article>
+<article>
+    <form class="col-12" [formGroup]="formReg" (ngSubmit)="submitRegister()">
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="text" class="form-control" formControlName="email" placeholder="pepe.fernandez110@alu.ulpgc.es">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" formControlName="password" placeholder="contraseña">
+        </div>
+        <input class="col-12 bg-secondary-color border-0 p-2 mb-3 rounded-3 text-light" type="submit" value="Registrate">
+        <a routerLink="/login" class="link-underline-opacity-0 text-link">¿Ya formas parte de Student Kit?</a>
+    </form>
+</article>

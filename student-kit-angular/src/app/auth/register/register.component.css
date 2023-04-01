@@ -1,0 +1,17 @@
+.bg-primary-color {
+    background-color: #0066A1;
+}
+
+.bg-secondary-color {
+    background-color: #F89A36;
+}
+
+.font-orange{
+    color: #F89A36;
+}
+
+@media only screen and (max-width: 576px) {
+    .text-link{
+        color: white
+    }
+  }
