@@ -8,7 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 import { LoginComponent } from './login/login.component';
-import { CoreComponent } from './core/core.component';
+import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
 
 
 
@@ -16,7 +16,7 @@ import { CoreComponent } from './core/core.component';
   declarations: [
     RegisterComponent,
     LoginComponent,
-    CoreComponent
+    AuthLayoutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+.bg-primary-color {
+    background-color: #0066A1;
+}
+
+.font-orange{
+    color: #F89A36;
+}
+
+body{
+    padding-top: 0 !important;
+  }
+
+main{
+    height: 100%;
+    padding:0;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
