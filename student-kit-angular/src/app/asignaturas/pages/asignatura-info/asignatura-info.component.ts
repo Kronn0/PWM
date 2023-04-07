@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { Subject } from 'src/app/models/subject/subject';
 import { DataServiceService } from 'src/app/services/dataService/data-service.service';
-import { GetSubjectsServiceService, subject } from 'src/app/services/getSubjects/get-subjects-service.service';
+import { SubjectService } from 'src/app/services/subject/subject.service';
+import { map } from 'rxjs';
+
 
 @Component({
   selector: 'app-asignatura-info',
@@ -10,22 +13,33 @@ import { GetSubjectsServiceService, subject } from 'src/app/services/getSubjects
 })
 export class AsignaturaInfoComponent {
 
-  subjects: subject[] = []
+  subjects: Subject[]
 
   constructor(
-    private getSubjectsService:GetSubjectsServiceService, 
     private router: Router, 
-    private dataService:DataServiceService
-    ){}
+    private subjectService: SubjectService,
+    private dataService: DataServiceService
+  ){}
 
   goToChild(id: number){
     this.router.navigate(['child', id])
   }
 
   ngOnInit(): void{
-    this.getSubjectsService.getSubjects().subscribe((subjects: subject[]) => {
-      this.subjects = subjects
-      this.dataService.changeParam(this.subjects)
+    this.retrieveSubjects()
+  }
+
+  
+  retrieveSubjects(): void {
+    this.subjectService.getAll().snapshotChanges().pipe(
+      map(changes =>
+        changes.map(c =>
+          ({ key: c.payload.key, ...c.payload.val() })
+        )
+      )
+    ).subscribe(data => {
+      this.subjects = data
+      this.dataService.changeParam(data)
     })
   }
 }

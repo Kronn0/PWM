@@ -13,5 +13,6 @@ export class DataServiceService {
 
   changeParam(param: any[]) {
     this.paramSource.next(param)
+    console.log(param)
   }
 }

@@ -19,6 +19,10 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { AsignaturaInfoComponent } from './asignaturas/pages/asignatura-info/asignatura-info.component';
 import { InformationCardComponent } from './asignaturas/pages/asignatura-info/pages/information-card/information-card.component';
 import { AuthModule } from './auth/auth.module';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from 'src/environments/environment';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -43,6 +47,11 @@ import { AuthModule } from './auth/auth.module';
     BrowserAnimationsModule,
     MatCheckboxModule,
     AuthModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    AngularFireDatabaseModule,
+    AngularFireModule,
+    AngularFireModule.initializeApp(environment.firebase)
+
   ],
   providers: [],
   bootstrap: [AppComponent]

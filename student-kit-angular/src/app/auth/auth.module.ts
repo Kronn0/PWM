@@ -25,7 +25,6 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     NgbModule,
     RouterModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
   ],
   providers: [],

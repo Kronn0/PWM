@@ -14,3 +14,16 @@ header a:visited{
 header a:hover{
     color: #F89A36;
 }
+
+
+.btn.dropdown-toggle {
+    color: white;
+  }
+  
+  .btn.dropdown-toggle:hover {
+    color: #F89A36;
+  }
+
+li {
+    cursor: pointer
+}

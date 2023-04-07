@@ -1,9 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { find } from 'rxjs';
+import { Subject } from 'src/app/models/subject/subject';
 import { DataServiceService } from 'src/app/services/dataService/data-service.service';
-import { GetSubjectsServiceService, subject } from 'src/app/services/getSubjects/get-subjects-service.service';
-
 @Component({
   selector: 'app-information-card',
   templateUrl: './information-card.component.html',
@@ -11,9 +10,9 @@ import { GetSubjectsServiceService, subject } from 'src/app/services/getSubjects
 })
 export class InformationCardComponent {
   id: any;
-  subjectObject: subject
+  subjectObject: Subject
   subjString: string
-  subjects: subject[] = []
+  subjects: Subject[] = []
 
   constructor(
     private route: ActivatedRoute, 
@@ -25,6 +24,7 @@ export class InformationCardComponent {
         this.id = params.get('id')
         this.dataService.sharedParam.subscribe((param) => {
           this.subjects = param
+          console.log(param)
           this.subjects.find((item) => {
             if(item.id === this.id){
               this.subjectObject = item

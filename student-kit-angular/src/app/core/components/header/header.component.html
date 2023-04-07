@@ -14,10 +14,16 @@
                 <li class="nav-item"><a routerLink="asignaturas"><span class="fs-5">Asignaturas</span></a></li>
             </ul>    
         </div>
-        <div class="col-sm-4 text-end">
-            <a href="#" id="userButton"><span class="fs-5">Pepe Fernandez</span></a>
-            <input type="button" (click)="onClick()" value="logout">
-        </div>
+        <article class="col-sm-4 d-flex justify-content-end">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle border-0 fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pepe Fernandez 
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a (click)="onClick()">Log out</a></li>    
+                  </ul>
+            </div>
+        </article>
     </nav>
     
 </header>
