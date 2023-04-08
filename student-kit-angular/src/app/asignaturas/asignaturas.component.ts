@@ -14,8 +14,6 @@ import { DataServiceService } from '../services/dataService/data-service.service
 export class AsignaturasComponent implements OnInit {
   
   searchText: string = ""
-  //subjects: subject[] = []
-
   subjects: Subject[]
   filteredSubjects: Subject[]
   filters = {}
@@ -45,13 +43,13 @@ export class AsignaturasComponent implements OnInit {
       )
     ).subscribe(data => {
       this.subjects = data
-      this.applyFilters()
     })
   }
 
   applyFilters(){
     this.filteredSubjects = this.subjects.filter(subject => {
       return (
+        subject.asignatura?.toLowerCase().includes(this.searchText.toLowerCase()) &&
         subject.duracion === "1er. semestre"
       )
     })

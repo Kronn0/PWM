@@ -27,3 +27,7 @@ header a:hover{
 li {
     cursor: pointer
 }
+
+.bg-secondary-color {
+    background-color: #0066a1;
+}

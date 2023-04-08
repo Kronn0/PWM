@@ -28,7 +28,7 @@
             </div>
             <article class="m-2 col-sm-12 rounded-4 listContainer">
                 <ul class="list-unstyled">
-                    <div *ngFor="let subject of subjects" class="bo rder-bottom m-3">
+                    <div *ngFor="let subject of subjects  | appFilter: searchText: semestersCheckboxes" class="border-bottom m-3">
                         <div routerLink="/asignaturaInfo/{{subject.id}}" class="itemList p-1 rounded-3">
                             <p>{{ subject.asignatura }}</p>
                             <p>{{ subject.duracion }}</p>    
