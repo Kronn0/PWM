@@ -23,6 +23,8 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from 'src/environments/environment';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireModule } from '@angular/fire/compat';
+import { FullCalendarModule } from '@fullcalendar/angular';
+
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { AngularFireModule } from '@angular/fire/compat';
     FilterPipe,
     AsignaturaInfoComponent,
     InformationCardComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     AngularFireDatabaseModule,
     AngularFireModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    FullCalendarModule
 
   ],
   providers: [],
