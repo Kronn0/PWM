@@ -4,6 +4,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import bootstrap5Plugin from '@fullcalendar/bootstrap5';
 
+
 @Component({
   selector: 'app-horario',
   templateUrl: './horario.component.html',
@@ -14,11 +15,14 @@ export class HorarioComponent {
 
   calendarOptions: CalendarOptions = {
     initialView: 'daysFiveweek',
-    themeSystem: 'bootstrap5',
+    contentHeight: 'auto',
+    dayHeaderFormat: {
+      weekday: 'long'
+    },
     views: {
       daysFiveweek: {
+        duration: {weeks: 1},
         type: 'timeGrid',
-        duration: {days: 5},
         slotMinTime: '8:30',
         slotMaxTime: '15:30',
         slotDuration: '01:00:00',
@@ -29,15 +33,15 @@ export class HorarioComponent {
           minute: "2-digit",
           omitZeroMinute: true,
           hour12: false
+
         }
       }
     },
     headerToolbar: {
       start:'',
-      center: 'title',
+      center: '',
       end: ''
     },
-
     weekends: false,// initial value
     plugins: [timeGridPlugin, dayGridPlugin, bootstrap5Plugin]
 
@@ -48,5 +52,8 @@ export class HorarioComponent {
   toggleMenu(){
     this.buttonToggle = !this.buttonToggle
   }
+
+
+
 
 }
