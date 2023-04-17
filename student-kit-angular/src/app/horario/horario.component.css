@@ -1,0 +1,10 @@
+#contHeader button{
+  background: transparent;
+  outline-color: transparent;
+  border: transparent;
+  padding: 10px;
+}
+
+#contHeader .headerIcon{
+  transform: scale(1.5);
+}

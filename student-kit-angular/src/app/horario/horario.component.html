@@ -1,11 +1,19 @@
-<div>
-  <div id="contHorarioTitulo" class="text-center">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <div class="row" id="contHeader">
+  <div id="contHorarioTitulo" class="col text-center">
     <h1 id="horarioTitulo">Titulo de Horario</h1>
-  </div>
-  <div id="contEditHorario">
-    <input class="col-2" id="editHorario" type="button">
-  </div>
 </div>
-<div>
+  <div id="contEditHorario" class="col order-first align-items-end">
+    <button id="editHorario" type="button"> <mat-icon class="headerIcon">edit</mat-icon> </button>
+  </div>
+  <div id="contSelHorario" class="col order-last text-end">
+    <button id="selHorario" type="button">  <mat-icon class="headerIcon">calendar_today</mat-icon> </button>
+
+  </div>
+  </div>
+<div id="contFullHorario" *ngIf="showContainer">
 <full-calendar [options]="calendarOptions"></full-calendar>
+</div>
+<div  id="contOneDayHorario" *ngIf="!showContainer">
+  <full-calendar [options]="calendarOptionsOneDay"></full-calendar>
 </div>

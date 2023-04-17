@@ -24,6 +24,8 @@ import { environment } from 'src/environments/environment';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import {MatIconModule} from '@angular/material/icon'
+import { LayoutModule } from '@angular/cdk/layout';
 
 
 @NgModule({
@@ -54,8 +56,9 @@ import { FullCalendarModule } from '@fullcalendar/angular';
     AngularFireDatabaseModule,
     AngularFireModule,
     AngularFireModule.initializeApp(environment.firebase),
-    FullCalendarModule
-
+    FullCalendarModule,
+    MatIconModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
