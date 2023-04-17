@@ -1,28 +1,45 @@
-<header class="p-3 fixed-top">
+<header class="fixed-top">
     <nav class="navbar navbar-expand">
-        <section class="container-fluid">
-            <article class="col-sm-4 d-flex flex-row" id="headerLogo">
-                <img id="logotipoImg" src="#" alt="logotipo">
-                <a class="navbar-brand fs-4" href="#">Student Kit</a>
-            </article>
-            <article class="collapse navbar-collapse col-sm-4 bg-secondary-color" id="navbarCollapse">
-                <ul class="navbar-nav">
-                  <li class="nav-item nav-link active"><a routerLink="horario"><span class="fs-5 d-none d-md-inline-block">Horario</span><span class="d-inline-block d-md-none"><svg-icon src="assets/media/calendar-clear.svg" [svgStyle]="{ 'width.px':40 }"></svg-icon></span></a></li>
-                <li class="nav-item nav-link"><a routerLink="profesores"><span class="fs-5 d-none d-md-inline-block">Profesorado</span><span class="d-inline-block d-md-none"><svg-icon src="assets/media/id-card.svg" [svgStyle]="{ 'width.px':40 }"></svg-icon></span></a></li>
-                <li class="nav-item nav-link"><a routerLink="asignaturas"><span class="fs-5 d-none d-md-inline-block">Asignaturas</span><span class="d-inline-block d-md-none"><svg-icon src="assets/media/school.svg" [svgStyle]="{ 'width.px':40 }"></svg-icon></span></a></li>
-            </ul>
-                <div class="navbar-nav ms-auto">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle border-0 fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Pepe Fernandez 
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a (click)="onClick()">Log out</a></li>    
-                          </ul>
-                    </div>
-                </div>
-            </article>
-        </section>
+        <div class="row container-fluid px-4">
+            <div class="col d-flex flex-row justify-content-start align-middle" id="headerLogo">
+                <a class="navbar-brand fs-5" href="#">
+                  <img id="logotipoImg" src="assets/media/home.svg" alt="logotipo">
+                </a>
+            </div>
+            <div class="col-6 bg-secondary-color align-middle">
+                <ul class="navbar-nav flex-row justify-content-around">
+                  <li class="nav-item nav-link active"><a routerLink="horario">
+                    <span class="fs-5 d-none d-md-inline-block">Horario</span>
+                    <span class="d-inline-block d-md-none">
+                      <img src="assets/media/calendar-clear.svg">
+                    </span>
+                  </a></li>
+                <li class="nav-item nav-link"><a routerLink="profesores">
+                  <span class="fs-5 d-none d-md-inline-block">Profesorado</span>
+                  <span class="d-inline-block d-md-none">
+                    <img src="assets/media/id-card.svg">
+                  </span>
+                </a></li>
+                <li class="nav-item nav-link"><a routerLink="asignaturas">
+                  <span class="fs-5 d-none d-md-inline-block">Asignaturas</span>
+                  <span class="d-inline-block d-md-none">
+                    <img src="assets/media/school.svg">
+                  </span>
+                </a></li>
+                </ul>
+            </div>
+            <div class="navbar-nav col justify-content-end dropdown-center">
+                <button class="btn dropdown-toggle border-0 fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="fs-5 d-none d-md-inline-block">Pepe Fernandez</span>
+                  <span class="d-inline-block d-md-none">
+                    <img src="assets/media/person-circle.svg">
+                  </span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" (click)="onClick()">Log out</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
     
 </header>
