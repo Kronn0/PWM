@@ -23,7 +23,8 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from 'src/environments/environment';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireModule } from '@angular/fire/compat';
-import { AngularSvgIconModule } from 'angular-svg-icon';
+import {MatIconModule} from '@angular/material/icon';
+import { MatIconRegistry } from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -44,10 +45,10 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    AngularSvgIconModule.forRoot(),
     FormsModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
+    MatIconModule,
     AuthModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     AngularFireDatabaseModule,
