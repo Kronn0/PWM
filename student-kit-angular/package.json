@@ -30,6 +30,7 @@
     "@fullcalendar/timegrid": "^6.1.5",
     "@ng-bootstrap/ng-bootstrap": "^14.0.1",
     "@popperjs/core": "^2.11.7",
+    "angular-svg-icon": "^15.0.0",
     "bootstrap": "^5.3.0-alpha2",
     "bootstrap-icons": "^1.10.4",
     "firebase": "^9.19.1",

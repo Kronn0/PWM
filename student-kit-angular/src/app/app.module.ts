@@ -26,7 +26,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import {MatIconModule} from '@angular/material/icon'
 import { LayoutModule } from '@angular/cdk/layout';
-
+import { MatIconRegistry } from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -51,6 +51,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     FormsModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
+    MatIconModule,
     AuthModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     AngularFireDatabaseModule,

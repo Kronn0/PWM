@@ -2,6 +2,11 @@ header {
     background-color: #0066a1;
     height: 70px;
 }
+
+nav{
+  height: 70px;
+}
+
 header a:link{
     color:white;
     text-decoration: none;
@@ -31,3 +36,15 @@ li {
 .bg-secondary-color {
     background-color: #0066a1;
 }
+
+img {
+  width: 40px;
+}
+
+mat-icon{
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+
