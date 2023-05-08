@@ -1,0 +1,7 @@
+{
+  "name": "ionic-student-kit",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
