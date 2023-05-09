@@ -7,18 +7,25 @@ import { RegisterPage } from './register/register.page';
 
 const routes: Routes = [
   {
-    path: 'login',
-    component: LoginPage
-  },
-  {
-    path: 'register',
-    component: RegisterPage
-  },
-  {
     path: '',
-    redirectTo: 'login',
-    pathMatch: 'full'
-  }
+    component: AuthPage,
+    children: [
+      {
+        path: 'login',
+        component: LoginPage
+      },
+      {
+        path: 'register',
+        component: RegisterPage
+      },
+      {
+        path: '',
+        redirectTo: 'login',
+        pathMatch: 'full'
+      }
+    ]
+  },
+ 
 
   
 ];

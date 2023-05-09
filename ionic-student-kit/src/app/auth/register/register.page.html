@@ -1,13 +1,22 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
+<article class="mt-4 text-center">
+  <h2 class="font-orange fw-bold pb-4">Crea una cuenta</h2>
+</article>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">register</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+<article>
+  <form class="col-12" [formGroup]="formRegister" (ngSubmit)="submitRegister()">
+      <div class="mb-3">
+          <label class="form-label text-light">Email</label>
+          <input type="text" class="form-control" formControlName="email" placeholder="pepe.fernandez110@alu.ulpgc.es">
+      </div>
+      <div class="mb-3">
+        <label class="form-label text-light">Username</label>
+        <input type="text" class="form-control" formControlName="username" placeholder="PepeF1">
+    </div>
+      <div class="mb-3">
+          <label class="form-label text-light">Password</label>
+          <input type="password" class="form-control" formControlName="password" placeholder="contraseña">
+      </div>
+      <input class="col-12 bg-secondary-color border-0 p-2 mb-3 rounded-3 text-light" type="submit" value="Registrate">
+      <a routerLink="/auth/login" class="link-underline-opacity-0 text-light text-center">¿Ya formas parte de Student Kit?</a>
+    </form>
+</article>
