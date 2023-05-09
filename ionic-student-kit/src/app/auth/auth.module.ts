@@ -11,6 +11,12 @@ import { LoginPage } from './login/login.page';
 import { RegisterPage } from './register/register.page';
 import { LoginPageModule } from './login/login.module';
 import { RegisterPageModule } from './register/register.module';
+import { initializeApp } from 'firebase/app'
+import { environment } from 'src/environments/environment';
+
+
+
+const app = initializeApp(environment.firebase)
 
 @NgModule({
   imports: [

@@ -1,22 +1,27 @@
-<article class="mt-4 text-center">
-  <h2 class="font-orange fw-bold pb-4">Crea una cuenta</h2>
-</article>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crea una cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<article>
-  <form class="col-12" [formGroup]="formRegister" (ngSubmit)="submitRegister()">
-      <div class="mb-3">
-          <label class="form-label text-light">Email</label>
-          <input type="text" class="form-control" formControlName="email" placeholder="pepe.fernandez110@alu.ulpgc.es">
-      </div>
-      <div class="mb-3">
-        <label class="form-label text-light">Username</label>
-        <input type="text" class="form-control" formControlName="username" placeholder="PepeF1">
-    </div>
-      <div class="mb-3">
-          <label class="form-label text-light">Password</label>
-          <input type="password" class="form-control" formControlName="password" placeholder="contraseña">
-      </div>
-      <input class="col-12 bg-secondary-color border-0 p-2 mb-3 rounded-3 text-light" type="submit" value="Registrate">
-      <a routerLink="/auth/login" class="link-underline-opacity-0 text-light text-center">¿Ya formas parte de Student Kit?</a>
-    </form>
-</article>
+<ion-content>
+  <form [formGroup]="formRegister" (ngSubmit)="submitRegister()">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input type="text" formControlName="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button type="submit" expand="block">Register</ion-button>
+  </form>
+  <p class="p-3">¿Ya estas registrado? <a routerLink="/auth/login" class="link-underline-opacity-0 text-link">Entra en tu cuenta</a></p>
+</ion-content>
+
