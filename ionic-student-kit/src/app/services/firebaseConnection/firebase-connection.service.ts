@@ -28,9 +28,5 @@ export class FirebaseConnectionService {
     return this.database
   }
 
-  getApp(){
-    return this.app
-  }
-
 
 }
