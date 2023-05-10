@@ -25,11 +25,11 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
-  submitLogin(){
-    this.userService.login(this.formLogin.value)
-    .then(response => {
-      this.router.navigate(['/home/asignaturas'])
-    })
+  async submitLogin() {
+    try {
+      const response = await this.userService.login(this.formLogin.value);
+      this.router.navigate(['/home/asignaturas']);
+    } catch (error) {}
   }
 
 

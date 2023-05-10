@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { initializeApp } from 'firebase/app';
 import { environment } from 'src/environments/environment';
 import '@firebase/auth'
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, Auth } from 'firebase/auth';
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, Auth, User } from 'firebase/auth';
 import { getDatabase, Database, ref, set, push } from 'firebase/database'
+import { FirebaseConnectionService } from '../firebaseConnection/firebase-connection.service';
 
 
 @Injectable({
@@ -11,19 +12,25 @@ import { getDatabase, Database, ref, set, push } from 'firebase/database'
 })
 export class UserService {
 
-  private app;
   private auth: Auth
-  private database: Database 
+  private database: Database
+  private currentUser: User | undefined
 
-  constructor() { 
+  constructor(private firebaseConnectionService: FirebaseConnectionService) { 
     
-    this.app = initializeApp(environment.firebase)
-    this.auth = getAuth(this.app)
-    this.database = getDatabase(this.app)
+    this.auth = this.firebaseConnectionService.getAuth()
+    this.database = this.firebaseConnectionService.getDatabase()
   }
 
-  login({email, password}: any) {
+  login({email, password}: any): Promise<any> {
     return signInWithEmailAndPassword(this.auth, email, password)
+      .then((userCredential) => {
+        this.currentUser = userCredential.user;
+        return userCredential;
+      })
+      .catch(error => {
+        throw error;
+      });
   }
 
   register({email, username, password}: any) {
@@ -39,6 +46,10 @@ export class UserService {
       username: username,
       email: email,
     })
+  }
+
+  getCurrentUser(){
+    return this.currentUser
   }
 
 }

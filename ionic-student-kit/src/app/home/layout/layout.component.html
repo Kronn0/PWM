@@ -1,38 +1,41 @@
-<router-outlet></router-outlet>
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button 
-      tab="horarios" 
-      class="bg-primary text-light"
-      routerLink="horarios"
-    >
-      <fa-icon [icon]="faCalendar"></fa-icon>
-        Horarios
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+  <ion-tabs>
+    <ion-tab-bar>
+      <ion-tab-button 
+        tab="horarios" 
+        class="bg-primary text-light"
+        routerLink="horarios"
+      >
+        <fa-icon [icon]="faCalendar"></fa-icon>
+          Horarios
+      </ion-tab-button>
+      <ion-tab-button 
+        tab="asignaturas" 
+        class="bg-primary text-light"
+        routerLink="asignaturas"
+      >
+        <fa-icon [icon]="faRectangleList"></fa-icon>
+        Asignaturas
     </ion-tab-button>
-    <ion-tab-button 
-      tab="asignaturas" 
+      <ion-tab-button 
+        tab="profesores" 
+        class="bg-primary text-light"
+        routerLink="profesores" routerDirection="root"
+      >
+        <fa-icon [icon]="faPersonChalkboard"></fa-icon>
+        Profesores
+      </ion-tab-button>
+      <ion-tab-button 
+      tab="perfil" 
       class="bg-primary text-light"
-      routerLink="asignaturas"
+      routerLink="perfil" routerDirection="root"
     >
-      <fa-icon [icon]="faRectangleList"></fa-icon>
-      Asignaturas
-  </ion-tab-button>
-    <ion-tab-button 
-      tab="profesores" 
-      class="bg-primary text-light"
-      routerLink="profesores" routerDirection="root"
-    >
-      <fa-icon [icon]="faPersonChalkboard"></fa-icon>
-      Profesores
+      <fa-icon [icon]="faUser"></fa-icon>
+      Mi Perfil
     </ion-tab-button>
-    <ion-tab-button 
-    tab="profile" 
-    class="bg-primary text-light"
-    routerLink="perfil" routerDirection="root"
-  >
-    <fa-icon [icon]="faUser"></fa-icon>
-    Mi Perfil
-  </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
-
+    </ion-tab-bar>
+  </ion-tabs>
+  
+  
+</ion-app>
