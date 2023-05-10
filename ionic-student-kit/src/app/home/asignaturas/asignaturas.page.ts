@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject } from '../models/subject/subject';
+
 
 @Component({
   selector: 'app-asignaturas',
@@ -8,6 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class AsignaturasPage implements OnInit {
 
   constructor() { }
+  searchText = "";
+  subject: Subject[];
+
 
   ngOnInit() {
   }

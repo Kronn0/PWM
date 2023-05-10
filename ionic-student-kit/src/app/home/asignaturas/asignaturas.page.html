@@ -10,4 +10,25 @@
       <ion-title size="large">asignaturas</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <main>
+    <div ngbDropdown class="col-sm-5">
+      <button class="btn bg-gray rounded-4 col-sm-12" id="dropdownButton" ngbDropdownToggle>Ordenación: </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownButton">
+        <button ngbDropdownItem>Alfabeto (A-Z)</button>
+        <button ngbDropdownItem>Año</button>
+        <button ngbDropdownItem>Departamento</button>
+      </div>
+    </div>
+    <article class="m-2 col-sm-12 rounded-4 listContainer">
+      <ul class="list-unstyled">
+        <div  class="border-bottom m-3">
+          <div routerLink="" class="itemList p-1 rounded-3">
+            <p>hola</p>
+            <p>que tal</p>
+          </div>
+        </div>
+      </ul>
+    </article>
+  </main>
 </ion-content>
