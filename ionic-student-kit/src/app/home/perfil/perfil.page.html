@@ -4,9 +4,24 @@
     <ion-card-subtitle></ion-card-subtitle>
   </ion-card-header>
 
-  <ion-card-content >
-    
-    <p *ngIf="userData">Username: {{ userData[userId].username }}</p>
+  <ion-card-content class="ion-padding">
+    <p *ngIf="userData; else elseBlock">Username: {{ username }} <br> Email: {{ userData[userId].email }}</p>
+    <ion-input 
+    *ngIf="userData" 
+    label="Cambia tu nombre de usuario"
+    labelPlacement="floating"
+    [counter]="true"
+    maxlength="20"
+    [(ngModel)]="username"
+    ></ion-input>
+    <ion-button *ngIf="userData" id="save-button" size="small" (click)="updateUsernameInDatabase()">
+      Guardar cambios
+      <ion-icon name="pencil"></ion-icon>
+    </ion-button>
+    <ng-template #elseBlock>
+      No hay usuario logueado actualmente.
+      <a (click)="navLogin()" class="link-underline-opacity-0 text-link">Entra en tu cuenta</a>
+    </ng-template>
   </ion-card-content>
 </ion-card>
 

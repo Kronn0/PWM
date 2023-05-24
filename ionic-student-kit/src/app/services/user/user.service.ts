@@ -3,7 +3,7 @@ import { initializeApp } from 'firebase/app';
 import { environment } from 'src/environments/environment';
 import '@firebase/auth'
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, Auth, User } from 'firebase/auth';
-import { getDatabase, Database, ref, set, push } from 'firebase/database'
+import { getDatabase, Database, ref, set, push, update } from 'firebase/database'
 import { FirebaseConnectionService } from '../firebaseConnection/firebase-connection.service';
 
 
@@ -47,6 +47,20 @@ export class UserService {
       email: email,
     })
   }
+
+  updateUsername(newUsername: string, userId: string){
+    const usersRef = ref(this.database, `users/${userId}`)
+    update(usersRef, {
+      username: newUsername,
+    })
+    .then(() => {
+      console.log("Email updated successfully")
+    })
+    .catch((error) => {
+      console.error("Error updating email", error)
+    })
+  }
+
 
   getCurrentUser(){
     return this.currentUser
